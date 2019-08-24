@@ -1,26 +1,30 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://purl.obolibrary.org/obo/duo-basic.owl#"
-     xml:base="http://purl.obolibrary.org/obo/duo-basic.owl"
-     xmlns:dc="http://purl.org/dc/elements/1.1/"
-     xmlns:obo="http://purl.obolibrary.org/obo/"
-     xmlns:owl="http://www.w3.org/2002/07/owl#"
-     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-     xmlns:xml="http://www.w3.org/XML/1998/namespace"
-     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY untitled-ontology-9 "http://www.semanticweb.org/amira/ontologies/2018/9/untitled-ontology-9#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.semanticweb.org/amira/ontologies/2018/9/untitled-ontology-9#"
+     xml:base="http://www.semanticweb.org/amira/ontologies/2018/9/untitled-ontology-9"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
-     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
-    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/duo-basic.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/duo/releases/2019-06-05/duo-basic.owl"/>
-    </owl:Ontology>
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:untitled-ontology-9="http://www.semanticweb.org/amira/ontologies/2018/9/untitled-ontology-9#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/amira/ontologies/2018/9/untitled-ontology-9"/>
     
 
 
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
-    // Annotation properties
+    // Object Properties
     //
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
@@ -28,642 +32,660 @@
     
 
 
-    <!-- http://protege.stanford.edu/plugins/owl/protege#defaultLanguage -->
+    <!-- http://www.semanticweb.org/amira/ontologies/2018/9/untitled-ontology-9#acumulate-aassessment-activity-score -->
 
-    <owl:AnnotationProperty rdf:about="http://protege.stanford.edu/plugins/owl/protege#defaultLanguage"/>
+    <owl:ObjectProperty rdf:about="&untitled-ontology-9;acumulate-aassessment-activity-score">
+        <rdfs:domain rdf:resource="&untitled-ontology-9;AccordedScore"/>
+        <rdfs:range rdf:resource="&untitled-ontology-9;AssessmentActivityScore"/>
+    </owl:ObjectProperty>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/BFO_0000179 -->
+    <!-- http://www.semanticweb.org/amira/ontologies/2018/9/untitled-ontology-9#acumulate-evidence-score -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000179">
-        <obo:IAO_0000115 xml:lang="en">Relates an entity in the ontology to the name of the variable that is used to represent it in the code that generates the BFO OWL file from the lispy specification.</obo:IAO_0000115>
-        <obo:IAO_0000232 xml:lang="en">Really of interest to developers only</obo:IAO_0000232>
-        <rdfs:label xml:lang="en">BFO OWL specification label</rdfs:label>
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
-    </owl:AnnotationProperty>
+    <owl:ObjectProperty rdf:about="&untitled-ontology-9;acumulate-evidence-score">
+        <rdfs:domain rdf:resource="&untitled-ontology-9;AccordedScore"/>
+        <rdfs:range rdf:resource="&untitled-ontology-9;EvidenceScore"/>
+    </owl:ObjectProperty>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/BFO_0000180 -->
+    <!-- http://www.semanticweb.org/amira/ontologies/2018/9/untitled-ontology-9#acumulte-artifact-score -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000180">
-        <obo:IAO_0000115 xml:lang="en">Relates an entity in the ontology to the term that is used to represent it in the the CLIF specification of BFO2</obo:IAO_0000115>
-        <obo:IAO_0000119>Person:Alan Ruttenberg</obo:IAO_0000119>
-        <obo:IAO_0000232 xml:lang="en">Really of interest to developers only</obo:IAO_0000232>
-        <rdfs:label xml:lang="en">BFO CLIF specification label</rdfs:label>
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
-    </owl:AnnotationProperty>
+    <owl:ObjectProperty rdf:about="&untitled-ontology-9;acumulte-artifact-score">
+        <rdfs:domain rdf:resource="&untitled-ontology-9;AccordedScore"/>
+        <rdfs:range rdf:resource="&untitled-ontology-9;ArtifactsScore"/>
+    </owl:ObjectProperty>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/DUO_0000041 -->
+    <!-- http://www.semanticweb.org/amira/ontologies/2018/9/untitled-ontology-9#attestes-a -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/DUO_0000041">
-        <rdfs:label xml:lang="en">DUO_preferred_label</rdfs:label>
-    </owl:AnnotationProperty>
+    <owl:ObjectProperty rdf:about="&untitled-ontology-9;attestes-a">
+        <rdfs:domain rdf:resource="&untitled-ontology-9;Artifacts"/>
+        <rdfs:range rdf:resource="&untitled-ontology-9;artifact-competence"/>
+    </owl:ObjectProperty>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/IAO_0000111 -->
+    <!-- http://www.semanticweb.org/amira/ontologies/2018/9/untitled-ontology-9#concernes-artifacts-rubric -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000111">
-        <obo:IAO_0000111 xml:lang="en">editor preferred term</obo:IAO_0000111>
-        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
-        <obo:IAO_0000115 xml:lang="en">The concise, meaningful, and human-friendly name for a class or property preferred by the ontology developers. (US-English)</obo:IAO_0000115>
-        <obo:IAO_0000117 xml:lang="en">PERSON:Daniel Schober</obo:IAO_0000117>
-        <obo:IAO_0000119 xml:lang="en">GROUP:OBI:&lt;http://purl.obolibrary.org/obo/obi&gt;</obo:IAO_0000119>
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
-        <rdfs:label xml:lang="en">editor preferred term</rdfs:label>
-    </owl:AnnotationProperty>
+    <owl:ObjectProperty rdf:about="&untitled-ontology-9;concernes-artifacts-rubric">
+        <rdfs:range rdf:resource="&untitled-ontology-9;ArtifactsRubric"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-9;Rubric"/>
+    </owl:ObjectProperty>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/IAO_0000112 -->
+    <!-- http://www.semanticweb.org/amira/ontologies/2018/9/untitled-ontology-9#concernes-assessmentactivity-rubric -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000112">
-        <obo:IAO_0000111 xml:lang="en">example</obo:IAO_0000111>
-        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
-        <obo:IAO_0000115 xml:lang="en">A phrase describing how a term should be used and/or a citation to a work which uses it. May also include other kinds of examples that facilitate immediate understanding, such as widely know prototypes or instances of a class, or cases where a relation is said to hold.</obo:IAO_0000115>
-        <obo:IAO_0000117 xml:lang="en">PERSON:Daniel Schober</obo:IAO_0000117>
-        <obo:IAO_0000119 xml:lang="en">GROUP:OBI:&lt;http://purl.obolibrary.org/obo/obi&gt;</obo:IAO_0000119>
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
-        <rdfs:label xml:lang="en">example of usage</rdfs:label>
-    </owl:AnnotationProperty>
+    <owl:ObjectProperty rdf:about="&untitled-ontology-9;concernes-assessmentactivity-rubric">
+        <rdfs:range rdf:resource="&untitled-ontology-9;AssessmentActivityRubric"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-9;Rubric"/>
+    </owl:ObjectProperty>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/IAO_0000113 -->
+    <!-- http://www.semanticweb.org/amira/ontologies/2018/9/untitled-ontology-9#concernes-evidence-rubric -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000113">
-        <obo:IAO_0000111 xml:lang="en">in branch</obo:IAO_0000111>
-        <obo:IAO_0000115 xml:lang="en">An annotation property indicating which module the terms belong to. This is currently experimental and not implemented yet.</obo:IAO_0000115>
-        <obo:IAO_0000117 xml:lang="en">GROUP:OBI</obo:IAO_0000117>
-        <obo:IAO_0000119 xml:lang="en">OBI_0000277</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">in branch</rdfs:label>
-    </owl:AnnotationProperty>
+    <owl:ObjectProperty rdf:about="&untitled-ontology-9;concernes-evidence-rubric">
+        <rdfs:range rdf:resource="&untitled-ontology-9;EvidenceRubric"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-9;Rubric"/>
+    </owl:ObjectProperty>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/IAO_0000114 -->
+    <!-- http://www.semanticweb.org/amira/ontologies/2018/9/untitled-ontology-9#contain -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000114">
-        <obo:IAO_0000111 xml:lang="en">has curation status</obo:IAO_0000111>
-        <obo:IAO_0000117 xml:lang="en">PERSON:Alan Ruttenberg</obo:IAO_0000117>
-        <obo:IAO_0000117 xml:lang="en">PERSON:Bill Bug</obo:IAO_0000117>
-        <obo:IAO_0000117 xml:lang="en">PERSON:Melanie Courtot</obo:IAO_0000117>
-        <obo:IAO_0000119 xml:lang="en">OBI_0000281</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">has curation status</rdfs:label>
-    </owl:AnnotationProperty>
+    <owl:ObjectProperty rdf:about="&untitled-ontology-9;contain">
+        <rdfs:range rdf:resource="&untitled-ontology-9;Evidence"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-9;ExternelInformation"/>
+    </owl:ObjectProperty>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
+    <!-- http://www.semanticweb.org/amira/ontologies/2018/9/untitled-ontology-9#contain-scores -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115">
-        <obo:IAO_0000111 xml:lang="en">definition</obo:IAO_0000111>
-        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
-        <obo:IAO_0000115 xml:lang="en">The official definition, explaining the meaning of a class or property. Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions.</obo:IAO_0000115>
-        <obo:IAO_0000116 xml:lang="en">2012-04-05: 
-Barry Smith
-
-The official OBI definition, explaining the meaning of a class or property: &apos;Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions&apos;  is terrible.
-
-Can you fix to something like:
-
-A statement of necessary and sufficient conditions explaining the meaning of an expression referring to a class or property.
-
-Alan Ruttenberg
-
-Your proposed definition is a reasonable candidate, except that it is very common that necessary and sufficient conditions are not given. Mostly they are necessary, occasionally they are necessary and sufficient or just sufficient. Often they use terms that are not themselves defined and so they effectively can&apos;t be evaluated by those criteria. 
-
-On the specifics of the proposed definition:
-
-We don&apos;t have definitions of &apos;meaning&apos; or &apos;expression&apos; or &apos;property&apos;. For &apos;reference&apos; in the intended sense I think we use the term &apos;denotation&apos;. For &apos;expression&apos;, I think we you mean symbol, or identifier. For &apos;meaning&apos; it differs for class and property. For class we want documentation that let&apos;s the intended reader determine whether an entity is instance of the class, or not. For property we want documentation that let&apos;s the intended reader determine, given a pair of potential relata, whether the assertion that the relation holds is true. The &apos;intended reader&apos; part suggests that we also specify who, we expect, would be able to understand the definition, and also generalizes over human and computer reader to include textual and logical definition. 
-
-Personally, I am more comfortable weakening definition to documentation, with instructions as to what is desirable. 
-
-We also have the outstanding issue of how to aim different definitions to different audiences. A clinical audience reading chebi wants a different sort of definition documentation/definition from a chemistry trained audience, and similarly there is a need for a definition that is adequate for an ontologist to work with.  </obo:IAO_0000116>
-        <obo:IAO_0000117 xml:lang="en">PERSON:Daniel Schober</obo:IAO_0000117>
-        <obo:IAO_0000119 xml:lang="en">GROUP:OBI:&lt;http://purl.obolibrary.org/obo/obi&gt;</obo:IAO_0000119>
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
-        <rdfs:label xml:lang="en">definition</rdfs:label>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">definition</rdfs:label>
-    </owl:AnnotationProperty>
+    <owl:ObjectProperty rdf:about="&untitled-ontology-9;contain-scores">
+        <rdfs:range rdf:resource="&untitled-ontology-9;AccordedScore"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-9;Performance"/>
+    </owl:ObjectProperty>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/IAO_0000116 -->
+    <!-- http://www.semanticweb.org/amira/ontologies/2018/9/untitled-ontology-9#contains-personal-info -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000116">
-        <obo:IAO_0000111 xml:lang="en">editor note</obo:IAO_0000111>
-        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
-        <obo:IAO_0000115 xml:lang="en">An administrative note intended for its editor. It may not be included in the publication version of the ontology, so it should contain nothing necessary for end users to understand the ontology.</obo:IAO_0000115>
-        <obo:IAO_0000117 xml:lang="en">PERSON:Daniel Schober</obo:IAO_0000117>
-        <obo:IAO_0000119 xml:lang="en">GROUP:OBI:&lt;http://purl.obfoundry.org/obo/obi&gt;</obo:IAO_0000119>
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
-        <rdfs:label xml:lang="en">editor note</rdfs:label>
-    </owl:AnnotationProperty>
+    <owl:ObjectProperty rdf:about="&untitled-ontology-9;contains-personal-info">
+        <rdfs:range rdf:resource="&untitled-ontology-9;Identification"/>
+    </owl:ObjectProperty>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/IAO_0000117 -->
+    <!-- http://www.semanticweb.org/amira/ontologies/2018/9/untitled-ontology-9#contains-relations -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000117">
-        <obo:IAO_0000111 xml:lang="en">term editor</obo:IAO_0000111>
-        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
-        <obo:IAO_0000115 xml:lang="en">Name of editor entering the term in the file. The term editor is a point of contact for information regarding the term. The term editor may be, but is not always, the author of the definition, which may have been worked upon by several people</obo:IAO_0000115>
-        <obo:IAO_0000116 xml:lang="en">20110707, MC: label update to term editor and definition modified accordingly. See https://github.com/information-artifact-ontology/IAO/issues/115.</obo:IAO_0000116>
-        <obo:IAO_0000117 xml:lang="en">PERSON:Daniel Schober</obo:IAO_0000117>
-        <obo:IAO_0000119 xml:lang="en">GROUP:OBI:&lt;http://purl.obolibrary.org/obo/obi&gt;</obo:IAO_0000119>
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
-        <rdfs:label xml:lang="en">term editor</rdfs:label>
-    </owl:AnnotationProperty>
+    <owl:ObjectProperty rdf:about="&untitled-ontology-9;contains-relations">
+        <rdfs:range rdf:resource="&untitled-ontology-9;Relations"/>
+    </owl:ObjectProperty>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/IAO_0000118 -->
+    <!-- http://www.semanticweb.org/amira/ontologies/2018/9/untitled-ontology-9#contains-security-key -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000118">
-        <obo:IAO_0000111 xml:lang="en">alternative term</obo:IAO_0000111>
-        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
-        <obo:IAO_0000115 xml:lang="en">An alternative name for a class or property which means the same thing as the preferred name (semantically equivalent)</obo:IAO_0000115>
-        <obo:IAO_0000117 xml:lang="en">PERSON:Daniel Schober</obo:IAO_0000117>
-        <obo:IAO_0000119 xml:lang="en">GROUP:OBI:&lt;http://purl.obolibrary.org/obo/obi&gt;</obo:IAO_0000119>
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
-        <rdfs:label xml:lang="en">alternative term</rdfs:label>
-    </owl:AnnotationProperty>
+    <owl:ObjectProperty rdf:about="&untitled-ontology-9;contains-security-key">
+        <rdfs:range rdf:resource="&untitled-ontology-9;SecurityKey"/>
+    </owl:ObjectProperty>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/IAO_0000119 -->
+    <!-- http://www.semanticweb.org/amira/ontologies/2018/9/untitled-ontology-9#could-be -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000119">
-        <obo:IAO_0000111 xml:lang="en">definition source</obo:IAO_0000111>
-        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
-        <obo:IAO_0000115 xml:lang="en">formal citation, e.g. identifier in external database to indicate / attribute source(s) for the definition. Free text indicate / attribute source(s) for the definition. EXAMPLE: Author Name, URI, MeSH Term C04, PUBMED ID, Wiki uri on 31.01.2007</obo:IAO_0000115>
-        <obo:IAO_0000117 xml:lang="en">PERSON:Daniel Schober</obo:IAO_0000117>
-        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Discussion on obo-discuss mailing-list, see http://bit.ly/hgm99w</obo:IAO_0000119>
-        <obo:IAO_0000119 xml:lang="en">GROUP:OBI:&lt;http://purl.obolibrary.org/obo/obi&gt;</obo:IAO_0000119>
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
-        <rdfs:label xml:lang="en">definition source</rdfs:label>
-    </owl:AnnotationProperty>
+    <owl:ObjectProperty rdf:about="&untitled-ontology-9;could-be">
+        <rdfs:range rdf:resource="&untitled-ontology-9;InvalidWeight"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-9;Weight"/>
+    </owl:ObjectProperty>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/IAO_0000231 -->
+    <!-- http://www.semanticweb.org/amira/ontologies/2018/9/untitled-ontology-9#couldbe -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000231">
-        <obo:IAO_0000111 xml:lang="en">has obsolescence reason</obo:IAO_0000111>
-        <obo:IAO_0000115 xml:lang="en">Relates an annotation property to an obsolescence reason. The values of obsolescence reasons come from a list of predefined terms, instances of the class obsolescence reason specification.</obo:IAO_0000115>
-        <obo:IAO_0000117 xml:lang="en">PERSON:Alan Ruttenberg</obo:IAO_0000117>
-        <obo:IAO_0000117 xml:lang="en">PERSON:Melanie Courtot</obo:IAO_0000117>
-        <rdfs:label xml:lang="en">has obsolescence reason</rdfs:label>
-    </owl:AnnotationProperty>
+    <owl:ObjectProperty rdf:about="&untitled-ontology-9;couldbe">
+        <rdfs:range rdf:resource="&untitled-ontology-9;ValidWeight"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-9;Weight"/>
+    </owl:ObjectProperty>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/IAO_0000232 -->
+    <!-- http://www.semanticweb.org/amira/ontologies/2018/9/untitled-ontology-9#depends-on -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000232">
-        <obo:IAO_0000111 xml:lang="en">curator note</obo:IAO_0000111>
-        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
-        <obo:IAO_0000115 xml:lang="en">An administrative note of use for a curator but of no use for a user</obo:IAO_0000115>
-        <obo:IAO_0000117 xml:lang="en">PERSON:Alan Ruttenberg</obo:IAO_0000117>
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
-        <rdfs:label xml:lang="en">curator note</rdfs:label>
-    </owl:AnnotationProperty>
+    <owl:ObjectProperty rdf:about="&untitled-ontology-9;depends-on">
+        <rdfs:domain rdf:resource="&untitled-ontology-9;AssessmentActivityRubric"/>
+        <rdfs:range rdf:resource="&untitled-ontology-9;relatedCompetence"/>
+    </owl:ObjectProperty>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/IAO_0000233 -->
+    <!-- http://www.semanticweb.org/amira/ontologies/2018/9/untitled-ontology-9#described-by -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000233">
-        <obo:IAO_0000111>term tracker item</obo:IAO_0000111>
-        <obo:IAO_0000112>the URI for an OBI Terms ticket at sourceforge, such as https://sourceforge.net/p/obi/obi-terms/772/</obo:IAO_0000112>
-        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
-        <obo:IAO_0000115>An IRI or similar locator for a request or discussion of an ontology term.</obo:IAO_0000115>
-        <obo:IAO_0000117>Person: Jie Zheng, Chris Stoeckert, Alan Ruttenberg</obo:IAO_0000117>
-        <obo:IAO_0000119>Person: Jie Zheng, Chris Stoeckert, Alan Ruttenberg</obo:IAO_0000119>
-        <rdfs:comment>The &apos;tracker item&apos; can associate a tracker with a specific ontology term.</rdfs:comment>
-        <rdfs:label xml:lang="en">term tracker item</rdfs:label>
-    </owl:AnnotationProperty>
+    <owl:ObjectProperty rdf:about="&untitled-ontology-9;described-by">
+        <rdfs:range rdf:resource="&untitled-ontology-9;Artifacts"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-9;ExternelInformation"/>
+    </owl:ObjectProperty>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/IAO_0000234 -->
+    <!-- http://www.semanticweb.org/amira/ontologies/2018/9/untitled-ontology-9#encompasses-activity -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000234">
-        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
-        <obo:IAO_0000115>The name of the person, project, or organization that motivated inclusion of an ontology term by requesting its addition.</obo:IAO_0000115>
-        <obo:IAO_0000117>Person: Jie Zheng, Chris Stoeckert, Alan Ruttenberg</obo:IAO_0000117>
-        <obo:IAO_0000119>Person: Jie Zheng, Chris Stoeckert, Alan Ruttenberg</obo:IAO_0000119>
-        <rdfs:comment>The &apos;term requester&apos; can credit the person, organization or project who request the ontology term.</rdfs:comment>
-        <rdfs:label xml:lang="en">ontology term requester</rdfs:label>
-    </owl:AnnotationProperty>
+    <owl:ObjectProperty rdf:about="&untitled-ontology-9;encompasses-activity">
+        <rdfs:range rdf:resource="&untitled-ontology-9;Activity"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-9;Artifacts"/>
+    </owl:ObjectProperty>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/IAO_0000411 -->
+    <!-- http://www.semanticweb.org/amira/ontologies/2018/9/untitled-ontology-9#encompasses-affilaition -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000411">
-        <obo:IAO_0000111 xml:lang="en">is denotator type</obo:IAO_0000111>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">relates an class defined in an ontology, to the type of it&apos;s denotator</obo:IAO_0000115>
-        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In OWL 2 add AnnotationPropertyRange(&apos;is denotator type&apos; &apos;denotator type&apos;)</obo:IAO_0000116>
-        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Alan Ruttenberg</obo:IAO_0000117>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">is denotator type</rdfs:label>
-    </owl:AnnotationProperty>
+    <owl:ObjectProperty rdf:about="&untitled-ontology-9;encompasses-affilaition">
+        <rdfs:range rdf:resource="&untitled-ontology-9;Affilaition"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-9;Artifacts"/>
+    </owl:ObjectProperty>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/IAO_0000412 -->
+    <!-- http://www.semanticweb.org/amira/ontologies/2018/9/untitled-ontology-9#encompasses-product -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000412">
-        <obo:IAO_0000111 xml:lang="en">imported from</obo:IAO_0000111>
-        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
-        <obo:IAO_0000115 xml:lang="en">For external terms/classes, the ontology from which the term was imported</obo:IAO_0000115>
-        <obo:IAO_0000117 xml:lang="en">PERSON:Alan Ruttenberg</obo:IAO_0000117>
-        <obo:IAO_0000117 xml:lang="en">PERSON:Melanie Courtot</obo:IAO_0000117>
-        <obo:IAO_0000119 xml:lang="en">GROUP:OBI:&lt;http://purl.obolibrary.org/obo/obi&gt;</obo:IAO_0000119>
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
-        <rdfs:label xml:lang="en">imported from</rdfs:label>
-    </owl:AnnotationProperty>
+    <owl:ObjectProperty rdf:about="&untitled-ontology-9;encompasses-product">
+        <rdfs:domain rdf:resource="&untitled-ontology-9;Artifacts"/>
+        <rdfs:range rdf:resource="&untitled-ontology-9;Product"/>
+    </owl:ObjectProperty>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/IAO_0000424 -->
+    <!-- http://www.semanticweb.org/amira/ontologies/2018/9/untitled-ontology-9#encompasses-transcript -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000424">
-        <obo:IAO_0000111 xml:lang="en">expand expression to</obo:IAO_0000111>
-        <obo:IAO_0000112 xml:lang="en">ObjectProperty: RO_0002104
-Label: has plasma membrane part
-Annotations: IAO_0000424 &quot;http://purl.obolibrary.org/obo/BFO_0000051 some (http://purl.org/obo/owl/GO#GO_0005886 and http://purl.obolibrary.org/obo/BFO_0000051 some ?Y)&quot;
-</obo:IAO_0000112>
-        <obo:IAO_0000115 xml:lang="en">A macro expansion tag applied to an object property (or possibly a data property)  which can be used by a macro-expansion engine to generate more complex expressions from simpler ones</obo:IAO_0000115>
-        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Chris Mungall</obo:IAO_0000117>
-        <rdfs:label xml:lang="en">expand expression to</rdfs:label>
-    </owl:AnnotationProperty>
+    <owl:ObjectProperty rdf:about="&untitled-ontology-9;encompasses-transcript">
+        <rdfs:domain rdf:resource="&untitled-ontology-9;Artifacts"/>
+        <rdfs:range rdf:resource="&untitled-ontology-9;Transcript"/>
+    </owl:ObjectProperty>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/IAO_0000425 -->
+    <!-- http://www.semanticweb.org/amira/ontologies/2018/9/untitled-ontology-9#encompassess-interestes -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000425">
-        <obo:IAO_0000111 xml:lang="en">expand assertion to</obo:IAO_0000111>
-        <obo:IAO_0000112 xml:lang="en">ObjectProperty: RO???
-Label: spatially disjoint from
-Annotations: expand_assertion_to &quot;DisjointClasses: (http://purl.obolibrary.org/obo/BFO_0000051 some ?X)  (http://purl.obolibrary.org/obo/BFO_0000051 some ?Y)&quot;
-</obo:IAO_0000112>
-        <obo:IAO_0000115 xml:lang="en">A macro expansion tag applied to an annotation property which can be expanded into a more detailed axiom.</obo:IAO_0000115>
-        <obo:IAO_0000117 xml:lang="en">Chris Mungall</obo:IAO_0000117>
-        <rdfs:label xml:lang="en">expand assertion to</rdfs:label>
-    </owl:AnnotationProperty>
+    <owl:ObjectProperty rdf:about="&untitled-ontology-9;encompassess-interestes">
+        <rdfs:domain rdf:resource="&untitled-ontology-9;Artifacts"/>
+        <rdfs:range rdf:resource="&untitled-ontology-9;Interests"/>
+    </owl:ObjectProperty>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/IAO_0000426 -->
+    <!-- http://www.semanticweb.org/amira/ontologies/2018/9/untitled-ontology-9#encompassess-ressource -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000426">
-        <obo:IAO_0000111 xml:lang="en">first order logic expression</obo:IAO_0000111>
-        <obo:IAO_0000117 xml:lang="en">PERSON:Alan Ruttenberg</obo:IAO_0000117>
-        <rdfs:label xml:lang="en">first order logic expression</rdfs:label>
-    </owl:AnnotationProperty>
+    <owl:ObjectProperty rdf:about="&untitled-ontology-9;encompassess-ressource">
+        <rdfs:domain rdf:resource="&untitled-ontology-9;Artifacts"/>
+        <rdfs:range rdf:resource="&untitled-ontology-9;Ressource"/>
+    </owl:ObjectProperty>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/IAO_0000427 -->
+    <!-- http://www.semanticweb.org/amira/ontologies/2018/9/untitled-ontology-9#give-a -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000427">
-        <obo:IAO_0000111 xml:lang="en">antisymmetric property</obo:IAO_0000111>
-        <obo:IAO_0000112 xml:lang="en">part_of antisymmetric property xsd:true</obo:IAO_0000112>
-        <obo:IAO_0000115 xml:lang="en">use boolean value xsd:true to indicate that the property is an antisymmetric property</obo:IAO_0000115>
-        <obo:IAO_0000117 xml:lang="en">Alan Ruttenberg</obo:IAO_0000117>
-        <rdfs:label xml:lang="en">antisymmetric property</rdfs:label>
-    </owl:AnnotationProperty>
+    <owl:ObjectProperty rdf:about="&untitled-ontology-9;give-a">
+        <rdfs:domain rdf:resource="&untitled-ontology-9;AssessmentActivityRubric"/>
+        <rdfs:range rdf:resource="&untitled-ontology-9;AssessmentGrid"/>
+    </owl:ObjectProperty>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/IAO_0000589 -->
+    <!-- http://www.semanticweb.org/amira/ontologies/2018/9/untitled-ontology-9#has-elemnt -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000589">
-        <obo:IAO_0000111 xml:lang="en">OBO foundry unique label</obo:IAO_0000111>
-        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
-        <obo:IAO_0000115 xml:lang="en">An alternative name for a class or property which is unique across the OBO Foundry.</obo:IAO_0000115>
-        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The intended usage of that property is as follow: OBO foundry unique labels are automatically generated based on regular expressions provided by each ontology, so that SO could specify unique label = &apos;sequence &apos; + [label], etc. , MA could specify &apos;mouse + [label]&apos; etc. Upon importing terms, ontology developers can choose to use the &apos;OBO foundry unique label&apos; for an imported term or not. The same applies to tools .</obo:IAO_0000116>
-        <obo:IAO_0000117 xml:lang="en">PERSON:Alan Ruttenberg</obo:IAO_0000117>
-        <obo:IAO_0000117 xml:lang="en">PERSON:Bjoern Peters</obo:IAO_0000117>
-        <obo:IAO_0000117 xml:lang="en">PERSON:Chris Mungall</obo:IAO_0000117>
-        <obo:IAO_0000117 xml:lang="en">PERSON:Melanie Courtot</obo:IAO_0000117>
-        <obo:IAO_0000119 xml:lang="en">GROUP:OBO Foundry &lt;http://obofoundry.org/&gt;</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">OBO foundry unique label</rdfs:label>
-    </owl:AnnotationProperty>
+    <owl:ObjectProperty rdf:about="&untitled-ontology-9;has-elemnt">
+        <rdfs:range rdf:resource="&untitled-ontology-9;AssessmentActivity"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-9;GameProductions"/>
+    </owl:ObjectProperty>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/IAO_0000596 -->
+    <!-- http://www.semanticweb.org/amira/ontologies/2018/9/untitled-ontology-9#have-Competence -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000596">
-        <obo:IAO_0000112>Ontology: &lt;http://purl.obolibrary.org/obo/ro/idrange/&gt;
-  Annotations: 
-     &apos;has ID prefix&apos;: &quot;http://purl.obolibrary.org/obo/RO_&quot;
-     &apos;has ID digit count&apos; : 7,
-     rdfs:label &quot;RO id policy&quot;
-     &apos;has ID policy for&apos;: &quot;RO&quot;</obo:IAO_0000112>
-        <obo:IAO_0000115>Relates an ontology used to record id policy to the number of digits in the URI. The URI is: the &apos;has ID prefix&quot; annotation property value concatenated with an integer in the id range (left padded with &quot;0&quot;s to make this many digits)</obo:IAO_0000115>
-        <obo:IAO_0000117>Person:Alan Ruttenberg</obo:IAO_0000117>
-        <rdfs:label xml:lang="en">has ID digit count</rdfs:label>
-    </owl:AnnotationProperty>
+    <owl:ObjectProperty rdf:about="&untitled-ontology-9;have-Competence">
+        <rdfs:range rdf:resource="&untitled-ontology-9;Competency"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-9;user"/>
+    </owl:ObjectProperty>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/IAO_0000597 -->
+    <!-- http://www.semanticweb.org/amira/ontologies/2018/9/untitled-ontology-9#have-account -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000597">
-        <obo:IAO_0000112>Datatype: idrange:1
-Annotations: &apos;has ID range allocated to&apos;: &quot;Chris Mungall&quot;
-EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
-</obo:IAO_0000112>
-        <obo:IAO_0000115>Relates a datatype that encodes a range of integers to the name of the person or organization who can use those ids constructed in that range to define new terms</obo:IAO_0000115>
-        <obo:IAO_0000117>Person:Alan Ruttenberg</obo:IAO_0000117>
-        <rdfs:label xml:lang="en">has ID range allocated to</rdfs:label>
-    </owl:AnnotationProperty>
+    <owl:ObjectProperty rdf:about="&untitled-ontology-9;have-account">
+        <rdfs:domain rdf:resource="&untitled-ontology-9;user"/>
+    </owl:ObjectProperty>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/IAO_0000598 -->
+    <!-- http://www.semanticweb.org/amira/ontologies/2018/9/untitled-ontology-9#have-artifacts -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000598">
-        <obo:IAO_0000112>Ontology: &lt;http://purl.obolibrary.org/obo/ro/idrange/&gt;
-  Annotations: 
-     &apos;has ID prefix&apos;: &quot;http://purl.obolibrary.org/obo/RO_&quot;
-     &apos;has ID digit count&apos; : 7,
-     rdfs:label &quot;RO id policy&quot;
-     &apos;has ID policy for&apos;: &quot;RO&quot;</obo:IAO_0000112>
-        <obo:IAO_0000115>Relating an ontology used to record id policy to the ontology namespace whose policy it manages</obo:IAO_0000115>
-        <obo:IAO_0000117>Person:Alan Ruttenberg</obo:IAO_0000117>
-        <rdfs:label>has ID policy for</rdfs:label>
-    </owl:AnnotationProperty>
+    <owl:ObjectProperty rdf:about="&untitled-ontology-9;have-artifacts">
+        <rdfs:range rdf:resource="&untitled-ontology-9;Artifacts"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-9;user"/>
+    </owl:ObjectProperty>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/IAO_0000599 -->
+    <!-- http://www.semanticweb.org/amira/ontologies/2018/9/untitled-ontology-9#have-attached -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000599">
-        <obo:IAO_0000112>Ontology: &lt;http://purl.obolibrary.org/obo/ro/idrange/&gt;
-  Annotations: 
-     &apos;has ID prefix&apos;: &quot;http://purl.obolibrary.org/obo/RO_&quot;
-     &apos;has ID digit count&apos; : 7,
-     rdfs:label &quot;RO id policy&quot;
-     &apos;has ID policy for&apos;: &quot;RO&quot;</obo:IAO_0000112>
-        <obo:IAO_0000115>Relates an ontology used to record id policy to a prefix concatenated with an integer in the id range (left padded with &quot;0&quot;s to make this many digits) to construct an ID for a term being created.</obo:IAO_0000115>
-        <obo:IAO_0000117>Person:Alan Ruttenberg</obo:IAO_0000117>
-        <rdfs:label xml:lang="en">has ID prefix</rdfs:label>
-    </owl:AnnotationProperty>
+    <owl:ObjectProperty rdf:about="&untitled-ontology-9;have-attached">
+        <rdfs:domain rdf:resource="&untitled-ontology-9;Evidence"/>
+    </owl:ObjectProperty>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/IAO_0000600 -->
+    <!-- http://www.semanticweb.org/amira/ontologies/2018/9/untitled-ontology-9#have-evidence -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000600">
-        <obo:IAO_0000111 xml:lang="en">elucidation</obo:IAO_0000111>
-        <obo:IAO_0000117 xml:lang="en">person:Alan Ruttenberg</obo:IAO_0000117>
-        <obo:IAO_0000119 xml:lang="en">Person:Barry Smith</obo:IAO_0000119>
-        <obo:IAO_0000600 xml:lang="en">Primitive terms in a highest-level ontology such as BFO are terms which are so basic to our understanding of reality that there is no way of defining them in a non-circular fashion. For these, therefore, we can provide only elucidations, supplemented by examples and by axioms</obo:IAO_0000600>
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
-        <rdfs:label xml:lang="en">elucidation</rdfs:label>
-    </owl:AnnotationProperty>
+    <owl:ObjectProperty rdf:about="&untitled-ontology-9;have-evidence">
+        <rdfs:range rdf:resource="&untitled-ontology-9;Evidence"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-9;user"/>
+    </owl:ObjectProperty>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/IAO_0000601 -->
+    <!-- http://www.semanticweb.org/amira/ontologies/2018/9/untitled-ontology-9#have-portfolio -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000601">
-        <obo:IAO_0000111 xml:lang="en">has associated axiom(nl)</obo:IAO_0000111>
-        <obo:IAO_0000117 xml:lang="en">Person:Alan Ruttenberg</obo:IAO_0000117>
-        <obo:IAO_0000119 xml:lang="en">Person:Alan Ruttenberg</obo:IAO_0000119>
-        <obo:IAO_0000600 xml:lang="en">An axiom associated with a term expressed using natural language</obo:IAO_0000600>
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
-        <rdfs:label xml:lang="en">has associated axiom(nl)</rdfs:label>
-    </owl:AnnotationProperty>
+    <owl:ObjectProperty rdf:about="&untitled-ontology-9;have-portfolio">
+        <rdfs:range rdf:resource="&untitled-ontology-9;Portfolio"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-9;user"/>
+    </owl:ObjectProperty>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/IAO_0000602 -->
+    <!-- http://www.semanticweb.org/amira/ontologies/2018/9/untitled-ontology-9#haveCognitiveCompetence -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000602">
-        <obo:IAO_0000111 xml:lang="en">has associated axiom(fol)</obo:IAO_0000111>
-        <obo:IAO_0000117 xml:lang="en">Person:Alan Ruttenberg</obo:IAO_0000117>
-        <obo:IAO_0000119 xml:lang="en">Person:Alan Ruttenberg</obo:IAO_0000119>
-        <obo:IAO_0000600 xml:lang="en">An axiom expressed in first order logic using CLIF syntax</obo:IAO_0000600>
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
-        <rdfs:label xml:lang="en">has associated axiom(fol)</rdfs:label>
-    </owl:AnnotationProperty>
+    <owl:ObjectProperty rdf:about="&untitled-ontology-9;haveCognitiveCompetence">
+        <rdfs:range rdf:resource="&untitled-ontology-9;CognitiveSkills"/>
+        <rdfs:subPropertyOf rdf:resource="&untitled-ontology-9;have-Competence"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-9;user"/>
+    </owl:ObjectProperty>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/IAO_0000603 -->
+    <!-- http://www.semanticweb.org/amira/ontologies/2018/9/untitled-ontology-9#haveSoftCompetence -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000603">
-        <obo:IAO_0000111 xml:lang="en">is allocated id range</obo:IAO_0000111>
-        <obo:IAO_0000115 xml:lang="en">Add as annotation triples in the granting ontology</obo:IAO_0000115>
-        <obo:IAO_0000115 xml:lang="en">Relates an ontology IRI to an (inclusive) range of IRIs in an OBO name space. The range is give as, e.g. &quot;IAO_0020000-IAO_0020999&quot;</obo:IAO_0000115>
-        <obo:IAO_0000117 xml:lang="en">PERSON:Alan Ruttenberg</obo:IAO_0000117>
-        <rdfs:label xml:lang="en">is allocated id range</rdfs:label>
-    </owl:AnnotationProperty>
+    <owl:ObjectProperty rdf:about="&untitled-ontology-9;haveSoftCompetence">
+        <rdfs:range rdf:resource="&untitled-ontology-9;SoftSkills"/>
+        <rdfs:subPropertyOf rdf:resource="&untitled-ontology-9;have-Competence"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-9;user"/>
+    </owl:ObjectProperty>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/IAO_0000604 -->
+    <!-- http://www.semanticweb.org/amira/ontologies/2018/9/untitled-ontology-9#haveTechnicalCompetence -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000604">
-        <obo:IAO_0000111 xml:lang="en">retired from use as of</obo:IAO_0000111>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">relates a class of CRID to the date after which further instances should not be made, according to the central authority</obo:IAO_0000115>
-        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In OWL 2 add AnnotationPropertyRange xsd:dateTimeStamp</obo:IAO_0000116>
-        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Alan Ruttenberg</obo:IAO_0000117>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">retired from use as of</rdfs:label>
-    </owl:AnnotationProperty>
+    <owl:ObjectProperty rdf:about="&untitled-ontology-9;haveTechnicalCompetence">
+        <rdfs:range rdf:resource="&untitled-ontology-9;TechnicalSkills"/>
+        <rdfs:subPropertyOf rdf:resource="&untitled-ontology-9;have-Competence"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-9;user"/>
+    </owl:ObjectProperty>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/IAO_0010000 -->
+    <!-- http://www.semanticweb.org/amira/ontologies/2018/9/untitled-ontology-9#iclude-assessment-rules -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0010000">
-        <obo:IAO_0000111 xml:lang="en">has axiom id</obo:IAO_0000111>
-        <obo:IAO_0000117 xml:lang="en">Person:Alan Ruttenberg</obo:IAO_0000117>
-        <obo:IAO_0000119 xml:lang="en">Person:Alan Ruttenberg</obo:IAO_0000119>
-        <obo:IAO_0000600 xml:lang="en">A URI that is intended to be unique label for an axiom used for tracking change to the ontology. For an axiom expressed in different languages, each expression is given the same URI</obo:IAO_0000600>
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
-        <rdfs:label xml:lang="en">has axiom label</rdfs:label>
-    </owl:AnnotationProperty>
+    <owl:ObjectProperty rdf:about="&untitled-ontology-9;iclude-assessment-rules">
+        <rdfs:range rdf:resource="&untitled-ontology-9;AssessmentRules"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-9;EvidenceRubric"/>
+    </owl:ObjectProperty>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/IAO_0100001 -->
+    <!-- http://www.semanticweb.org/amira/ontologies/2018/9/untitled-ontology-9#include-assessment-artifact-criteria -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0100001">
-        <obo:IAO_0000111 xml:lang="en">term replaced by</obo:IAO_0000111>
-        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
-        <obo:IAO_0000115 xml:lang="en">Add as annotation triples in the granting ontology</obo:IAO_0000115>
-        <obo:IAO_0000115 xml:lang="en">Use on obsolete terms, relating the term to another term that can be used as a substitute</obo:IAO_0000115>
-        <obo:IAO_0000117 xml:lang="en">Person:Alan Ruttenberg</obo:IAO_0000117>
-        <obo:IAO_0000119 xml:lang="en">Person:Alan Ruttenberg</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">term replaced by</rdfs:label>
-    </owl:AnnotationProperty>
+    <owl:ObjectProperty rdf:about="&untitled-ontology-9;include-assessment-artifact-criteria">
+        <rdfs:domain rdf:resource="&untitled-ontology-9;ArtifactsRubric"/>
+        <rdfs:range rdf:resource="&untitled-ontology-9;AssessmentArtifactCriteria"/>
+    </owl:ObjectProperty>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/RO_0001900 -->
+    <!-- http://www.semanticweb.org/amira/ontologies/2018/9/untitled-ontology-9#include-assessment-criteria -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/RO_0001900">
-        <rdfs:label xml:lang="en">temporal interpretation</rdfs:label>
-        <foaf:page rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/oborel/obo-relations/wiki/ROAndTime</foaf:page>
-    </owl:AnnotationProperty>
+    <owl:ObjectProperty rdf:about="&untitled-ontology-9;include-assessment-criteria">
+        <rdfs:range rdf:resource="&untitled-ontology-9;AssessmentCriteria"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-9;EvidenceRubric"/>
+    </owl:ObjectProperty>
     
 
 
-    <!-- http://purl.org/dc/elements/1.1/contributor -->
+    <!-- http://www.semanticweb.org/amira/ontologies/2018/9/untitled-ontology-9#includes-Externel-informations -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/contributor"/>
+    <owl:ObjectProperty rdf:about="&untitled-ontology-9;includes-Externel-informations">
+        <rdfs:range rdf:resource="&untitled-ontology-9;ExternelInformation"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-9;Portfolio"/>
+    </owl:ObjectProperty>
     
 
 
-    <!-- http://purl.org/dc/elements/1.1/coverage -->
+    <!-- http://www.semanticweb.org/amira/ontologies/2018/9/untitled-ontology-9#includes-Game-productions -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/coverage"/>
+    <owl:ObjectProperty rdf:about="&untitled-ontology-9;includes-Game-productions">
+        <rdfs:range rdf:resource="&untitled-ontology-9;GameProductions"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-9;Portfolio"/>
+    </owl:ObjectProperty>
     
 
 
-    <!-- http://purl.org/dc/elements/1.1/creator -->
+    <!-- http://www.semanticweb.org/amira/ontologies/2018/9/untitled-ontology-9#includes-assertion -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
+    <owl:ObjectProperty rdf:about="&untitled-ontology-9;includes-assertion">
+        <rdfs:range rdf:resource="&untitled-ontology-9;Assertion"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-9;Portfolio"/>
+    </owl:ObjectProperty>
     
 
 
-    <!-- http://purl.org/dc/elements/1.1/date -->
+    <!-- http://www.semanticweb.org/amira/ontologies/2018/9/untitled-ontology-9#includes-assessment-artifacts-rules -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/date"/>
+    <owl:ObjectProperty rdf:about="&untitled-ontology-9;includes-assessment-artifacts-rules">
+        <rdfs:domain rdf:resource="&untitled-ontology-9;ArtifactsRubric"/>
+        <rdfs:range rdf:resource="&untitled-ontology-9;AssessmentArtifactsRules"/>
+    </owl:ObjectProperty>
     
 
 
-    <!-- http://purl.org/dc/elements/1.1/description -->
+    <!-- http://www.semanticweb.org/amira/ontologies/2018/9/untitled-ontology-9#includes-assessment-rubric -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/description"/>
+    <owl:ObjectProperty rdf:about="&untitled-ontology-9;includes-assessment-rubric">
+        <rdfs:domain rdf:resource="&untitled-ontology-9;Portfolio"/>
+        <rdfs:range rdf:resource="&untitled-ontology-9;Rubric"/>
+    </owl:ObjectProperty>
     
 
 
-    <!-- http://purl.org/dc/elements/1.1/format -->
+    <!-- http://www.semanticweb.org/amira/ontologies/2018/9/untitled-ontology-9#includes-performnace -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/format"/>
+    <owl:ObjectProperty rdf:about="&untitled-ontology-9;includes-performnace">
+        <rdfs:range rdf:resource="&untitled-ontology-9;Performance"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-9;Portfolio"/>
+    </owl:ObjectProperty>
     
 
 
-    <!-- http://purl.org/dc/elements/1.1/identifier -->
+    <!-- http://www.semanticweb.org/amira/ontologies/2018/9/untitled-ontology-9#includes-reflexion -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/identifier"/>
+    <owl:ObjectProperty rdf:about="&untitled-ontology-9;includes-reflexion">
+        <rdfs:domain rdf:resource="&untitled-ontology-9;Portfolio"/>
+        <rdfs:range rdf:resource="&untitled-ontology-9;Reflection"/>
+    </owl:ObjectProperty>
     
 
 
-    <!-- http://purl.org/dc/elements/1.1/language -->
+    <!-- http://www.semanticweb.org/amira/ontologies/2018/9/untitled-ontology-9#performed-Game-activity -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/language"/>
+    <owl:ObjectProperty rdf:about="&untitled-ontology-9;performed-Game-activity">
+        <rdfs:range rdf:resource="&untitled-ontology-9;GameActivity"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-9;user"/>
+    </owl:ObjectProperty>
     
 
 
-    <!-- http://purl.org/dc/elements/1.1/member -->
+    <!-- http://www.semanticweb.org/amira/ontologies/2018/9/untitled-ontology-9#performed-assessment-activity -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/member"/>
+    <owl:ObjectProperty rdf:about="&untitled-ontology-9;performed-assessment-activity">
+        <rdfs:range rdf:resource="&untitled-ontology-9;AssessmentActivity"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-9;user"/>
+    </owl:ObjectProperty>
     
 
 
-    <!-- http://purl.org/dc/elements/1.1/publisher -->
+    <!-- http://www.semanticweb.org/amira/ontologies/2018/9/untitled-ontology-9#present-artifact-activity -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/publisher"/>
+    <owl:ObjectProperty rdf:about="&untitled-ontology-9;present-artifact-activity">
+        <rdfs:range rdf:resource="&untitled-ontology-9;Activity"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-9;user"/>
+    </owl:ObjectProperty>
     
 
 
-    <!-- http://purl.org/dc/elements/1.1/relation -->
+    <!-- http://www.semanticweb.org/amira/ontologies/2018/9/untitled-ontology-9#present-artifact-product -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/relation"/>
+    <owl:ObjectProperty rdf:about="&untitled-ontology-9;present-artifact-product">
+        <rdfs:range rdf:resource="&untitled-ontology-9;Product"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-9;user"/>
+    </owl:ObjectProperty>
     
 
 
-    <!-- http://purl.org/dc/elements/1.1/rights -->
+    <!-- http://www.semanticweb.org/amira/ontologies/2018/9/untitled-ontology-9#present-artifact-ressource -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/rights"/>
+    <owl:ObjectProperty rdf:about="&untitled-ontology-9;present-artifact-ressource">
+        <rdfs:range rdf:resource="&untitled-ontology-9;Ressource"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-9;user"/>
+    </owl:ObjectProperty>
     
 
 
-    <!-- http://purl.org/dc/elements/1.1/source -->
+    <!-- http://www.semanticweb.org/amira/ontologies/2018/9/untitled-ontology-9#present-artifact-transcript -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/source"/>
+    <owl:ObjectProperty rdf:about="&untitled-ontology-9;present-artifact-transcript">
+        <rdfs:range rdf:resource="&untitled-ontology-9;Transcript"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-9;user"/>
+    </owl:ObjectProperty>
     
 
 
-    <!-- http://purl.org/dc/elements/1.1/subject -->
+    <!-- http://www.semanticweb.org/amira/ontologies/2018/9/untitled-ontology-9#present-evidence-Certifications -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/subject"/>
+    <owl:ObjectProperty rdf:about="&untitled-ontology-9;present-evidence-Certifications">
+        <rdfs:range rdf:resource="&untitled-ontology-9;Certifications"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-9;user"/>
+    </owl:ObjectProperty>
     
 
 
-    <!-- http://purl.org/dc/elements/1.1/title -->
+    <!-- http://www.semanticweb.org/amira/ontologies/2018/9/untitled-ontology-9#present-evidence-Qualifications -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
+    <owl:ObjectProperty rdf:about="&untitled-ontology-9;present-evidence-Qualifications">
+        <rdfs:range rdf:resource="&untitled-ontology-9;Qualifications"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-9;user"/>
+    </owl:ObjectProperty>
     
 
 
-    <!-- http://purl.org/dc/elements/1.1/type -->
+    <!-- http://www.semanticweb.org/amira/ontologies/2018/9/untitled-ontology-9#present-evidence-certification -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/type"/>
+    <owl:ObjectProperty rdf:about="&untitled-ontology-9;present-evidence-certification">
+        <rdfs:range rdf:resource="&untitled-ontology-9;Certifications"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-9;user"/>
+    </owl:ObjectProperty>
     
 
 
-    <!-- http://www.geneontology.org/formats/oboInOwl#id -->
+    <!-- http://www.semanticweb.org/amira/ontologies/2018/9/untitled-ontology-9#present-evidence-licence -->
 
-    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#id"/>
+    <owl:ObjectProperty rdf:about="&untitled-ontology-9;present-evidence-licence">
+        <rdfs:range rdf:resource="&untitled-ontology-9;License"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-9;user"/>
+    </owl:ObjectProperty>
     
 
 
-    <!-- http://www.geneontology.org/formats/oboInOwl#shorthand -->
+    <!-- http://www.semanticweb.org/amira/ontologies/2018/9/untitled-ontology-9#presented-by -->
 
-    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#shorthand">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">shorthand</rdfs:label>
-    </owl:AnnotationProperty>
+    <owl:ObjectProperty rdf:about="&untitled-ontology-9;presented-by">
+        <rdfs:domain rdf:resource="&untitled-ontology-9;Evidence"/>
+        <rdfs:range rdf:resource="&untitled-ontology-9;QCL"/>
+    </owl:ObjectProperty>
     
 
 
-    <!-- http://www.w3.org/2000/01/rdf-schema#comment -->
+    <!-- http://www.semanticweb.org/amira/ontologies/2018/9/untitled-ontology-9#presented-by-Qualifaications -->
 
-    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#comment"/>
+    <owl:ObjectProperty rdf:about="&untitled-ontology-9;presented-by-Qualifaications">
+        <rdfs:domain rdf:resource="&untitled-ontology-9;QCL"/>
+        <rdfs:range rdf:resource="&untitled-ontology-9;Qualifications"/>
+    </owl:ObjectProperty>
     
 
 
-    <!-- http://www.w3.org/2000/01/rdf-schema#isDefinedBy -->
+    <!-- http://www.semanticweb.org/amira/ontologies/2018/9/untitled-ontology-9#presented-by-certifications -->
 
-    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#isDefinedBy"/>
+    <owl:ObjectProperty rdf:about="&untitled-ontology-9;presented-by-certifications">
+        <rdfs:range rdf:resource="&untitled-ontology-9;Certifications"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-9;QCL"/>
+    </owl:ObjectProperty>
     
 
 
-    <!-- http://www.w3.org/2000/01/rdf-schema#label -->
+    <!-- http://www.semanticweb.org/amira/ontologies/2018/9/untitled-ontology-9#presented-by-licence -->
 
-    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#label"/>
+    <owl:ObjectProperty rdf:about="&untitled-ontology-9;presented-by-licence">
+        <rdfs:range rdf:resource="&untitled-ontology-9;License"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-9;QCL"/>
+    </owl:ObjectProperty>
     
 
 
-    <!-- http://www.w3.org/2000/01/rdf-schema#seeAlso -->
+    <!-- http://www.semanticweb.org/amira/ontologies/2018/9/untitled-ontology-9#presnet-artifact-afffiliation -->
 
-    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
+    <owl:ObjectProperty rdf:about="&untitled-ontology-9;presnet-artifact-afffiliation">
+        <rdfs:range rdf:resource="&untitled-ontology-9;Affilaition"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-9;user"/>
+    </owl:ObjectProperty>
     
 
 
-    <!-- http://xmlns.com/foaf/0.1/homepage -->
+    <!-- http://www.semanticweb.org/amira/ontologies/2018/9/untitled-ontology-9#presnet-artifact-interestes -->
 
-    <owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/homepage"/>
+    <owl:ObjectProperty rdf:about="&untitled-ontology-9;presnet-artifact-interestes">
+        <rdfs:range rdf:resource="&untitled-ontology-9;Interests"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-9;user"/>
+    </owl:ObjectProperty>
     
 
 
-    <!-- http://xmlns.com/foaf/0.1/page -->
+    <!-- http://www.semanticweb.org/amira/ontologies/2018/9/untitled-ontology-9#provided-with -->
 
-    <owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/page"/>
+    <owl:ObjectProperty rdf:about="&untitled-ontology-9;provided-with">
+        <rdfs:range rdf:resource="&untitled-ontology-9;Goal"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-9;Performance"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amira/ontologies/2018/9/untitled-ontology-9#receive -->
+
+    <owl:ObjectProperty rdf:about="&untitled-ontology-9;receive">
+        <rdfs:domain rdf:resource="&untitled-ontology-9;Evidence"/>
+        <rdfs:range rdf:resource="&untitled-ontology-9;Weight"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amira/ontologies/2018/9/untitled-ontology-9#related-competence-assessment-activity -->
+
+    <owl:ObjectProperty rdf:about="&untitled-ontology-9;related-competence-assessment-activity">
+        <rdfs:domain rdf:resource="&untitled-ontology-9;AssessmentActivity"/>
+        <rdfs:range rdf:resource="&untitled-ontology-9;relatedCompetence"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amira/ontologies/2018/9/untitled-ontology-9#related-to -->
+
+    <owl:ObjectProperty rdf:about="&untitled-ontology-9;related-to">
+        <rdfs:domain rdf:resource="&untitled-ontology-9;Evidence"/>
+        <rdfs:range rdf:resource="&untitled-ontology-9;evidence-competence"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amira/ontologies/2018/9/untitled-ontology-9#tracks -->
+
+    <owl:ObjectProperty rdf:about="&untitled-ontology-9;tracks">
+        <rdfs:range rdf:resource="&untitled-ontology-9;GameActivity"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-9;GameProductions"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/amira/ontologies/2018/9/untitled-ontology-9#has-adresse -->
+
+    <owl:DatatypeProperty rdf:about="&untitled-ontology-9;has-adresse"/>
+    
+
+
+    <!-- http://www.semanticweb.org/amira/ontologies/2018/9/untitled-ontology-9#has-age -->
+
+    <owl:DatatypeProperty rdf:about="&untitled-ontology-9;has-age"/>
+    
+
+
+    <!-- http://www.semanticweb.org/amira/ontologies/2018/9/untitled-ontology-9#has-phone-number -->
+
+    <owl:DatatypeProperty rdf:about="&untitled-ontology-9;has-phone-number"/>
+    
+
+
+    <!-- http://www.semanticweb.org/amira/ontologies/2018/9/untitled-ontology-9#hascognitiveCompetence -->
+
+    <owl:DatatypeProperty rdf:about="&untitled-ontology-9;hascognitiveCompetence"/>
+    
+
+
+    <!-- http://www.semanticweb.org/amira/ontologies/2018/9/untitled-ontology-9#hascongintiveskils -->
+
+    <owl:DatatypeProperty rdf:about="&untitled-ontology-9;hascongintiveskils"/>
+    
+
+
+    <!-- http://www.semanticweb.org/amira/ontologies/2018/9/untitled-ontology-9#hasname -->
+
+    <owl:DatatypeProperty rdf:about="&untitled-ontology-9;hasname"/>
+    
+
+
+    <!-- http://www.semanticweb.org/amira/ontologies/2018/9/untitled-ontology-9#have-artifact-score -->
+
+    <owl:DatatypeProperty rdf:about="&untitled-ontology-9;have-artifact-score">
+        <rdfs:domain rdf:resource="&untitled-ontology-9;user"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amira/ontologies/2018/9/untitled-ontology-9#have-assessmentactivity-score -->
+
+    <owl:DatatypeProperty rdf:about="&untitled-ontology-9;have-assessmentactivity-score">
+        <rdfs:domain rdf:resource="&untitled-ontology-9;user"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amira/ontologies/2018/9/untitled-ontology-9#have-evidence-score -->
+
+    <owl:DatatypeProperty rdf:about="&untitled-ontology-9;have-evidence-score">
+        <rdfs:domain rdf:resource="&untitled-ontology-9;user"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amira/ontologies/2018/9/untitled-ontology-9#havesoftcompetence -->
+
+    <owl:DatatypeProperty rdf:about="&untitled-ontology-9;havesoftcompetence"/>
+    
+
+
+    <!-- http://www.semanticweb.org/amira/ontologies/2018/9/untitled-ontology-9#havetechnicalcompetence -->
+
+    <owl:DatatypeProperty rdf:about="&untitled-ontology-9;havetechnicalcompetence"/>
     
 
 
@@ -678,479 +700,1082 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
     
 
 
-    <!-- http://purl.obolibrary.org/obo/DUO_0000001 -->
+    <!-- http://www.semanticweb.org/amira/ontologies/2018/9/untitled-ontology-9#Accessibilty -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DUO_0000001">
-        <obo:DUO_0000041 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">consent code</obo:DUO_0000041>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A data item that is used to indicate consent permissions for datasets and/or materials, and relates to the purposes for which datasets and/or material might be removed, stored or used.</obo:IAO_0000115>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DUO:0000001</oboInOwl:id>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">consent code</rdfs:label>
+    <owl:Class rdf:about="&untitled-ontology-9;Accessibilty">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-9;user"/>
     </owl:Class>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/DUO_0000002 -->
+    <!-- http://www.semanticweb.org/amira/ontologies/2018/9/untitled-ontology-9#AccordedScore -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DUO_0000002">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DUO_0000001"/>
-        <obo:DUO_0000041 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">consent code primary category</obo:DUO_0000041>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A categorical data item indicating the primary category the consent code belongs to according to Dyke et al. 2016.</obo:IAO_0000115>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DUO:0000002</oboInOwl:id>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">consent code primary category</rdfs:label>
+    <owl:Class rdf:about="&untitled-ontology-9;AccordedScore">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-9;Performance"/>
     </owl:Class>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/DUO_0000003 -->
+    <!-- http://www.semanticweb.org/amira/ontologies/2018/9/untitled-ontology-9#Activity -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DUO_0000003">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DUO_0000001"/>
-        <obo:DUO_0000041 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">consent code secondary category</obo:DUO_0000041>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A categorical data item indicating the secondary category the consent code belongs to according to Dyke et al. 2016.</obo:IAO_0000115>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DUO:0000003</oboInOwl:id>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">consent code secondary category</rdfs:label>
+    <owl:Class rdf:about="&untitled-ontology-9;Activity">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-9;Artifacts"/>
     </owl:Class>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/DUO_0000004 -->
+    <!-- http://www.semanticweb.org/amira/ontologies/2018/9/untitled-ontology-9#Affilaition -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DUO_0000004">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DUO_0000002"/>
-        <obo:DUO_0000041 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">no restriction</obo:DUO_0000041>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This consent code primary category indicates there is no restriction on use.</obo:IAO_0000115>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DUO:0000004</oboInOwl:id>
-        <oboInOwl:shorthand>NRES</oboInOwl:shorthand>
-        <rdfs:comment>20180907, Meeting Moran Melanie: This is to be thought about more carefully - what is the intent when using &apos;no restriction&apos; as usually users still need to be researchers.</rdfs:comment>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Note: the NRES alternative term may be confusing as in the UK it also stands for National Research Ethics Service</rdfs:comment>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">no restriction</rdfs:label>
+    <owl:Class rdf:about="&untitled-ontology-9;Affilaition">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-9;Artifacts"/>
     </owl:Class>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/DUO_0000005 -->
+    <!-- http://www.semanticweb.org/amira/ontologies/2018/9/untitled-ontology-9#Artifacts -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DUO_0000005">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DUO_0000042"/>
-        <obo:DUO_0000041>general research use and clinical care</obo:DUO_0000041>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This primary category consent code indicates that use is allowed for health/medical/biomedical purposes and other biological research, including the study of population origins or ancestry.</obo:IAO_0000115>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DUO:0000005</oboInOwl:id>
-        <oboInOwl:shorthand>GRU-CC</oboInOwl:shorthand>
-        <rdfs:label>general research use and clinical care</rdfs:label>
+    <owl:Class rdf:about="&untitled-ontology-9;Artifacts">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-9;ExternelInformation"/>
     </owl:Class>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/DUO_0000006 -->
+    <!-- http://www.semanticweb.org/amira/ontologies/2018/9/untitled-ontology-9#ArtifactsRubric -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DUO_0000006">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DUO_0000005"/>
-        <obo:DUO_0000041 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">health/medical/biomedical research</obo:DUO_0000041>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This primary category consent code indicates that use is allowed for health/medical/biomedical purposes; does not include the study of population origins or ancestry.</obo:IAO_0000115>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DUO:0000006</oboInOwl:id>
-        <oboInOwl:shorthand>HMB</oboInOwl:shorthand>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">health or medical or biomedical research</rdfs:label>
+    <owl:Class rdf:about="&untitled-ontology-9;ArtifactsRubric">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-9;Rubric"/>
     </owl:Class>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/DUO_0000007 -->
+    <!-- http://www.semanticweb.org/amira/ontologies/2018/9/untitled-ontology-9#ArtifactsScore -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DUO_0000007">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DUO_0000006"/>
-        <obo:DUO_0000041 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">disease-specific research</obo:DUO_0000041>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This primary category consent code indicates that use is allowed provided it is related to the specified disease.</obo:IAO_0000115>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DUO:0000007</oboInOwl:id>
-        <oboInOwl:shorthand>DS</oboInOwl:shorthand>
-        <rdfs:comment xml:lang="en">This term should be coupled with a term describing a disease from an ontology, such as the Disease Ontology, HPO, MonDO to specify the disease the restriction applies to.</rdfs:comment>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">disease specific research</rdfs:label>
+    <owl:Class rdf:about="&untitled-ontology-9;ArtifactsScore">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-9;AccordedScore"/>
     </owl:Class>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/DUO_0000011 -->
+    <!-- http://www.semanticweb.org/amira/ontologies/2018/9/untitled-ontology-9#Assertion -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DUO_0000011">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DUO_0000005"/>
-        <obo:DUO_0000041 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">population origins or ancestry research</obo:DUO_0000041>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This primary category consent code indicates that use of the data is limited to the study of population origins or ancestry.</obo:IAO_0000115>
-        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">population origins/ancestry research</obo:IAO_0000118>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DUO:0000011</oboInOwl:id>
-        <oboInOwl:shorthand>POA</oboInOwl:shorthand>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">population origins or ancestry research</rdfs:label>
+    <owl:Class rdf:about="&untitled-ontology-9;Assertion">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-9;Portfolio"/>
     </owl:Class>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/DUO_0000012 -->
+    <!-- http://www.semanticweb.org/amira/ontologies/2018/9/untitled-ontology-9#AssessmentActivity -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DUO_0000012">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DUO_0000003"/>
-        <obo:DUO_0000041 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">research-specific restrictions</obo:DUO_0000041>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This secondary category consent code indicates that use is limited to studies of a certain research type.</obo:IAO_0000115>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DUO:0000012</oboInOwl:id>
-        <oboInOwl:shorthand>RS</oboInOwl:shorthand>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">research specific restrictions</rdfs:label>
+    <owl:Class rdf:about="&untitled-ontology-9;AssessmentActivity">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-9;GameProductions"/>
     </owl:Class>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/DUO_0000014 -->
+    <!-- http://www.semanticweb.org/amira/ontologies/2018/9/untitled-ontology-9#AssessmentActivityRubric -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DUO_0000014">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DUO_0000003"/>
-        <obo:DUO_0000041 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">research use only</obo:DUO_0000041>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This secondary category consent code indicates that use is limited to research purposes (e.g., does not include its use in clinical care).</obo:IAO_0000115>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DUO:0000014</oboInOwl:id>
-        <oboInOwl:shorthand>RU</oboInOwl:shorthand>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">research use only</rdfs:label>
+    <owl:Class rdf:about="&untitled-ontology-9;AssessmentActivityRubric">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-9;Rubric"/>
     </owl:Class>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/DUO_0000015 -->
+    <!-- http://www.semanticweb.org/amira/ontologies/2018/9/untitled-ontology-9#AssessmentActivityScore -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DUO_0000015">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DUO_0000003"/>
-        <obo:DUO_0000041 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">no general methods research</obo:DUO_0000041>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This secondary category consent code indicates that use includes methods development research(e.g., development of software or algorithms) only within the bounds of other use limitations.</obo:IAO_0000115>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DUO:0000015</oboInOwl:id>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">no general methods research</rdfs:label>
+    <owl:Class rdf:about="&untitled-ontology-9;AssessmentActivityScore">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-9;AccordedScore"/>
     </owl:Class>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/DUO_0000016 -->
+    <!-- http://www.semanticweb.org/amira/ontologies/2018/9/untitled-ontology-9#AssessmentArtifactCriteria -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DUO_0000016">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DUO_0000003"/>
-        <obo:DUO_0000041 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">genetic studies only</obo:DUO_0000041>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This secondary category consent code indicates that use is limited to genetic studies only (i.e., no phenotype-only research)</obo:IAO_0000115>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DUO:0000016</oboInOwl:id>
-        <oboInOwl:shorthand>GSO</oboInOwl:shorthand>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">genetic studies only</rdfs:label>
+    <owl:Class rdf:about="&untitled-ontology-9;AssessmentArtifactCriteria">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-9;ArtifactsRubric"/>
     </owl:Class>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/DUO_0000017 -->
+    <!-- http://www.semanticweb.org/amira/ontologies/2018/9/untitled-ontology-9#AssessmentArtifactsRules -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DUO_0000017">
-        <obo:DUO_0000041 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">data use requirements</obo:DUO_0000041>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Requirements indicate additional conditions set for use.</obo:IAO_0000115>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DUO:0000017</oboInOwl:id>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">data use requirements</rdfs:label>
+    <owl:Class rdf:about="&untitled-ontology-9;AssessmentArtifactsRules">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-9;ArtifactsRubric"/>
     </owl:Class>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/DUO_0000018 -->
+    <!-- http://www.semanticweb.org/amira/ontologies/2018/9/untitled-ontology-9#AssessmentCriteria -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DUO_0000018">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DUO_0000017"/>
-        <obo:DUO_0000041 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">not-for-profit use only</obo:DUO_0000041>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This requirement indicates that use of the data is limited to not-for-profit organizations and not-for-profit use, non-commercial use.</obo:IAO_0000115>
-        <obo:IAO_0000118 xml:lang="en">non-commercial use</obo:IAO_0000118>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DUO:0000018</oboInOwl:id>
-        <oboInOwl:shorthand xml:lang="en">NPU</oboInOwl:shorthand>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">not for profit use only</rdfs:label>
+    <owl:Class rdf:about="&untitled-ontology-9;AssessmentCriteria">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-9;EvidenceRubric"/>
     </owl:Class>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/DUO_0000019 -->
+    <!-- http://www.semanticweb.org/amira/ontologies/2018/9/untitled-ontology-9#AssessmentGrid -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DUO_0000019">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DUO_0000017"/>
-        <obo:DUO_0000041 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">publication required</obo:DUO_0000041>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This requirement indicates that requestor agrees to make results of studies using the data available to the larger scientific community.</obo:IAO_0000115>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DUO:0000019</oboInOwl:id>
-        <oboInOwl:shorthand xml:lang="en">PUB</oboInOwl:shorthand>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">publication required</rdfs:label>
+    <owl:Class rdf:about="&untitled-ontology-9;AssessmentGrid">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-9;AssessmentActivityRubric"/>
     </owl:Class>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/DUO_0000020 -->
+    <!-- http://www.semanticweb.org/amira/ontologies/2018/9/untitled-ontology-9#AssessmentRules -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DUO_0000020">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DUO_0000017"/>
-        <obo:DUO_0000041 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">collaboration required</obo:DUO_0000041>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This requirement indicates that the requestor must agree to collaboration with the primary study investigator(s).</obo:IAO_0000115>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DUO:0000020</oboInOwl:id>
-        <oboInOwl:shorthand xml:lang="en">COL</oboInOwl:shorthand>
-        <rdfs:comment xml:lang="en">This could be coupled with a string describing the primary study investigator(s).</rdfs:comment>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">collaboration required</rdfs:label>
+    <owl:Class rdf:about="&untitled-ontology-9;AssessmentRules">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-9;EvidenceRubric"/>
     </owl:Class>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/DUO_0000021 -->
+    <!-- http://www.semanticweb.org/amira/ontologies/2018/9/untitled-ontology-9#Certifications -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DUO_0000021">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DUO_0000017"/>
-        <obo:DUO_0000041 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ethics approval required</obo:DUO_0000041>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This requirement indicates that the requestor must provide documentation of local IRB/ERB approval.</obo:IAO_0000115>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DUO:0000021</oboInOwl:id>
-        <oboInOwl:shorthand xml:lang="en">IRB</oboInOwl:shorthand>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ethics approval required</rdfs:label>
+    <owl:Class rdf:about="&untitled-ontology-9;Certifications">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-9;QCL"/>
     </owl:Class>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/DUO_0000022 -->
+    <!-- http://www.semanticweb.org/amira/ontologies/2018/9/untitled-ontology-9#CognitiveSkills -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DUO_0000022">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DUO_0000017"/>
-        <obo:DUO_0000041 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">geographical restriction</obo:DUO_0000041>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This requirement indicates that use is limited to within a specific geographic region.</obo:IAO_0000115>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DUO:0000022</oboInOwl:id>
-        <oboInOwl:shorthand xml:lang="en">GS-[XX]</oboInOwl:shorthand>
-        <rdfs:comment xml:lang="en">This should be coupled with an ontology term describing the geographical location the restriction applies to.</rdfs:comment>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">geographical restriction</rdfs:label>
+    <owl:Class rdf:about="&untitled-ontology-9;CognitiveSkills">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-9;Competency"/>
     </owl:Class>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/DUO_0000024 -->
+    <!-- http://www.semanticweb.org/amira/ontologies/2018/9/untitled-ontology-9#Competency -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DUO_0000024">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DUO_0000017"/>
-        <obo:DUO_0000041 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">publication moratorium</obo:DUO_0000041>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This requirement indicates that requestor agrees not to publish results of studies until a specific date</obo:IAO_0000115>
-        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">publication embargo</obo:IAO_0000118>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DUO:0000024</oboInOwl:id>
-        <oboInOwl:shorthand xml:lang="en">MOR-[XX]</oboInOwl:shorthand>
-        <rdfs:comment xml:lang="en">This should be coupled with a date specified as ISO8601</rdfs:comment>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">publication moratorium</rdfs:label>
+    <owl:Class rdf:about="&untitled-ontology-9;Competency">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-9;user"/>
     </owl:Class>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/DUO_0000025 -->
+    <!-- http://www.semanticweb.org/amira/ontologies/2018/9/untitled-ontology-9#Evidence -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DUO_0000025">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DUO_0000017"/>
-        <obo:DUO_0000041 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">time limit on use</obo:DUO_0000041>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This requirement indicates that use is approved for a specific number of months.</obo:IAO_0000115>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DUO:0000025</oboInOwl:id>
-        <oboInOwl:shorthand xml:lang="en">TS-[XX]</oboInOwl:shorthand>
-        <rdfs:comment xml:lang="en">This should be coupled with an integer value indicating the number of months.</rdfs:comment>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">time limit on use</rdfs:label>
+    <owl:Class rdf:about="&untitled-ontology-9;Evidence">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-9;ExternelInformation"/>
     </owl:Class>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/DUO_0000026 -->
+    <!-- http://www.semanticweb.org/amira/ontologies/2018/9/untitled-ontology-9#EvidenceRubric -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DUO_0000026">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DUO_0000017"/>
-        <obo:DUO_0000041 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">user-specific restriction</obo:DUO_0000041>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This requirement indicates that use is limited to use by approved users.</obo:IAO_0000115>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DUO:0000026</oboInOwl:id>
-        <oboInOwl:shorthand xml:lang="en">US</oboInOwl:shorthand>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">user specific restriction</rdfs:label>
+    <owl:Class rdf:about="&untitled-ontology-9;EvidenceRubric">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-9;Rubric"/>
     </owl:Class>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/DUO_0000027 -->
+    <!-- http://www.semanticweb.org/amira/ontologies/2018/9/untitled-ontology-9#EvidenceScore -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DUO_0000027">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DUO_0000017"/>
-        <obo:DUO_0000041 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">project-specific restriction</obo:DUO_0000041>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This requirement indicates that use is limited to use within an approved project.</obo:IAO_0000115>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DUO:0000027</oboInOwl:id>
-        <oboInOwl:shorthand xml:lang="en">PS</oboInOwl:shorthand>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">project specific restriction</rdfs:label>
+    <owl:Class rdf:about="&untitled-ontology-9;EvidenceScore">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-9;AccordedScore"/>
     </owl:Class>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/DUO_0000028 -->
+    <!-- http://www.semanticweb.org/amira/ontologies/2018/9/untitled-ontology-9#ExternelInformation -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DUO_0000028">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DUO_0000017"/>
-        <obo:DUO_0000041 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">institution-specific restriction</obo:DUO_0000041>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This requirement indicates that use is limited to use within an approved institution.</obo:IAO_0000115>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DUO:0000028</oboInOwl:id>
-        <oboInOwl:shorthand xml:lang="en">IS</oboInOwl:shorthand>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">institution specific restriction</rdfs:label>
+    <owl:Class rdf:about="&untitled-ontology-9;ExternelInformation">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-9;Portfolio"/>
     </owl:Class>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/DUO_0000029 -->
+    <!-- http://www.semanticweb.org/amira/ontologies/2018/9/untitled-ontology-9#GameActivity -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DUO_0000029">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DUO_0000017"/>
-        <obo:DUO_0000041 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">return to database/resource</obo:DUO_0000041>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This requirement indicates that the requestor must return derived/enriched data to the database/resource.</obo:IAO_0000115>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DUO:0000029</oboInOwl:id>
-        <oboInOwl:shorthand rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RTN</oboInOwl:shorthand>
-        <rdfs:label xml:lang="en">return to database or resource</rdfs:label>
+    <owl:Class rdf:about="&untitled-ontology-9;GameActivity">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-9;GameProductions"/>
     </owl:Class>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/DUO_0000031 -->
+    <!-- http://www.semanticweb.org/amira/ontologies/2018/9/untitled-ontology-9#GameProductions -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DUO_0000031">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000066"/>
-        <obo:DUO_0000041 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">method development</obo:DUO_0000041>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An investigation concerning development of methods, algorithms, software or analytical tools.</obo:IAO_0000115>
-        <obo:IAO_0000232 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This definition is a placeholder as a result of meetings at ICBO2018.</obo:IAO_0000232>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DUO_0000031</oboInOwl:id>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">method development</rdfs:label>
+    <owl:Class rdf:about="&untitled-ontology-9;GameProductions">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-9;Portfolio"/>
     </owl:Class>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/DUO_0000032 -->
+    <!-- http://www.semanticweb.org/amira/ontologies/2018/9/untitled-ontology-9#Goal -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DUO_0000032">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000066"/>
-        <obo:DUO_0000041 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">population research</obo:DUO_0000041>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An investigation concerning a specific population group.</obo:IAO_0000115>
-        <obo:IAO_0000232 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This definition is a placeholder as a result of meetings at ICBO2018.</obo:IAO_0000232>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DUO_0000032</oboInOwl:id>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Should be paired with the an ontology term representing this population (e.g., xxx).</rdfs:comment>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">population research</rdfs:label>
+    <owl:Class rdf:about="&untitled-ontology-9;Goal">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-9;Performance"/>
     </owl:Class>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/DUO_0000033 -->
+    <!-- http://www.semanticweb.org/amira/ontologies/2018/9/untitled-ontology-9#Identification -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DUO_0000033">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000066"/>
-        <obo:DUO_0000041 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ancestry research</obo:DUO_0000041>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An investigation concerning ancestry or population origins.</obo:IAO_0000115>
-        <obo:IAO_0000232 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This definition is a placeholder as a result of meetings at ICBO2018.</obo:IAO_0000232>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DUO_0000033</oboInOwl:id>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ancestry research</rdfs:label>
+    <owl:Class rdf:about="&untitled-ontology-9;Identification">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-9;user"/>
     </owl:Class>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/DUO_0000034 -->
+    <!-- http://www.semanticweb.org/amira/ontologies/2018/9/untitled-ontology-9#Interests -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DUO_0000034">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000066"/>
-        <obo:DUO_0000041 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">age category research</obo:DUO_0000041>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An investigation concerning specific age categories.</obo:IAO_0000115>
-        <obo:IAO_0000232 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This definition is a placeholder as a result of meetings at ICBO2018.</obo:IAO_0000232>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DUO_0000034</oboInOwl:id>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Should be paired with the an ontology term representing this population (e.g., xxx).</rdfs:comment>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">age category research</rdfs:label>
+    <owl:Class rdf:about="&untitled-ontology-9;Interests">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-9;Artifacts"/>
     </owl:Class>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/DUO_0000035 -->
+    <!-- http://www.semanticweb.org/amira/ontologies/2018/9/untitled-ontology-9#InvalidWeight -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DUO_0000035">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000066"/>
-        <obo:DUO_0000041 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gender category research</obo:DUO_0000041>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An investigation concerning specific gender categories.</obo:IAO_0000115>
-        <obo:IAO_0000232 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This definition is a placeholder as a result of meetings at ICBO2018.</obo:IAO_0000232>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DUO_0000035</oboInOwl:id>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Should be paired with the an ontology term representing this population (e.g., xxx).</rdfs:comment>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gender category research</rdfs:label>
+    <owl:Class rdf:about="&untitled-ontology-9;InvalidWeight">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-9;Weight"/>
     </owl:Class>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/DUO_0000036 -->
+    <!-- http://www.semanticweb.org/amira/ontologies/2018/9/untitled-ontology-9#License -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DUO_0000036">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000066"/>
-        <obo:DUO_0000041 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">research control</obo:DUO_0000041>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An investigation concerning use of data as reference or control material.</obo:IAO_0000115>
-        <obo:IAO_0000232 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This definition is a placeholder as a result of meetings at ICBO2018.</obo:IAO_0000232>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DUO_0000036</oboInOwl:id>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">research control</rdfs:label>
+    <owl:Class rdf:about="&untitled-ontology-9;License">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-9;QCL"/>
     </owl:Class>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/DUO_0000037 -->
+    <!-- http://www.semanticweb.org/amira/ontologies/2018/9/untitled-ontology-9#Other -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DUO_0000037">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000066"/>
-        <obo:DUO_0000041 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">biomedical research</obo:DUO_0000041>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An investigation concerning health, medical, or biomedical research.</obo:IAO_0000115>
-        <obo:IAO_0000232 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This definition is a placeholder as a result of meetings at ICBO2018.</obo:IAO_0000232>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DUO_0000037</oboInOwl:id>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">biomedical research</rdfs:label>
+    <owl:Class rdf:about="&untitled-ontology-9;Other">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-9;Portfolio"/>
     </owl:Class>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/DUO_0000038 -->
+    <!-- http://www.semanticweb.org/amira/ontologies/2018/9/untitled-ontology-9#Participation -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DUO_0000038">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DUO_0000037"/>
-        <obo:DUO_0000041 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">genetic research</obo:DUO_0000041>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Biomedical research concerning genetics (i.e., the study of genes, genetic variations and heredity).</obo:IAO_0000115>
-        <obo:IAO_0000232 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This definition is a placeholder as a result of meetings at ICBO2018.</obo:IAO_0000232>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DUO_0000038</oboInOwl:id>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">genetic research</rdfs:label>
+    <owl:Class rdf:about="&untitled-ontology-9;Participation">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-9;Artifacts"/>
     </owl:Class>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/DUO_0000039 -->
+    <!-- http://www.semanticweb.org/amira/ontologies/2018/9/untitled-ontology-9#Performance -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DUO_0000039">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DUO_0000037"/>
-        <obo:DUO_0000041 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">drug development research</obo:DUO_0000041>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Biomedical research concerning drug development.</obo:IAO_0000115>
-        <obo:IAO_0000232 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This definition is a placeholder as a result of meetings at ICBO2018.</obo:IAO_0000232>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DUO_0000039</oboInOwl:id>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">drug development research</rdfs:label>
+    <owl:Class rdf:about="&untitled-ontology-9;Performance">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-9;Portfolio"/>
     </owl:Class>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/DUO_0000040 -->
+    <!-- http://www.semanticweb.org/amira/ontologies/2018/9/untitled-ontology-9#Portfolio -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DUO_0000040">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DUO_0000037"/>
-        <obo:DUO_0000041 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">disease category research</obo:DUO_0000041>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Biomedical research research concerning specific disease/s</obo:IAO_0000115>
-        <obo:IAO_0000232 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This definition is a placeholder as a result of meetings at ICBO2018.</obo:IAO_0000232>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DUO_0000040</oboInOwl:id>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">disease category research</rdfs:label>
+    <owl:Class rdf:about="&untitled-ontology-9;Portfolio"/>
+    
+
+
+    <!-- http://www.semanticweb.org/amira/ontologies/2018/9/untitled-ontology-9#Product -->
+
+    <owl:Class rdf:about="&untitled-ontology-9;Product">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-9;Artifacts"/>
     </owl:Class>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/DUO_0000042 -->
+    <!-- http://www.semanticweb.org/amira/ontologies/2018/9/untitled-ontology-9#QCL -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DUO_0000042">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DUO_0000002"/>
-        <obo:DUO_0000041 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">general research use</obo:DUO_0000041>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This primary category consent code indicates that use is allowed for general research use for any research purpose.</obo:IAO_0000115>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DUO:0000042</oboInOwl:id>
-        <oboInOwl:shorthand>GRU</oboInOwl:shorthand>
-        <rdfs:comment xml:lang="en">This includes but is not limited to: health/medical/biomedical purposes, fundamental biology research, the study of population origins or ancestry, statistical methods and algorithms development, and social-sciences research.</rdfs:comment>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">general research use</rdfs:label>
+    <owl:Class rdf:about="&untitled-ontology-9;QCL">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-9;Evidence"/>
     </owl:Class>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/OBI_0000066 -->
+    <!-- http://www.semanticweb.org/amira/ontologies/2018/9/untitled-ontology-9#Qualifications -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000066">
-        <obo:IAO_0000111 xml:lang="en">investigation</obo:IAO_0000111>
-        <obo:IAO_0000115 xml:lang="en">a planned process that consists of parts: planning, study design execution, documentation and which produce conclusion(s).</obo:IAO_0000115>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
-        <rdfs:label xml:lang="en">investigation</rdfs:label>
+    <owl:Class rdf:about="&untitled-ontology-9;Qualifications">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-9;QCL"/>
     </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amira/ontologies/2018/9/untitled-ontology-9#Reflection -->
+
+    <owl:Class rdf:about="&untitled-ontology-9;Reflection">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-9;Portfolio"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amira/ontologies/2018/9/untitled-ontology-9#Relations -->
+
+    <owl:Class rdf:about="&untitled-ontology-9;Relations">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-9;user"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amira/ontologies/2018/9/untitled-ontology-9#Ressource -->
+
+    <owl:Class rdf:about="&untitled-ontology-9;Ressource">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-9;Artifacts"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amira/ontologies/2018/9/untitled-ontology-9#Rubric -->
+
+    <owl:Class rdf:about="&untitled-ontology-9;Rubric">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-9;Portfolio"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amira/ontologies/2018/9/untitled-ontology-9#SecurityKey -->
+
+    <owl:Class rdf:about="&untitled-ontology-9;SecurityKey">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-9;user"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amira/ontologies/2018/9/untitled-ontology-9#SoftSkills -->
+
+    <owl:Class rdf:about="&untitled-ontology-9;SoftSkills">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-9;Competency"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amira/ontologies/2018/9/untitled-ontology-9#TechnicalSkills -->
+
+    <owl:Class rdf:about="&untitled-ontology-9;TechnicalSkills">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-9;Competency"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amira/ontologies/2018/9/untitled-ontology-9#Transcript -->
+
+    <owl:Class rdf:about="&untitled-ontology-9;Transcript">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-9;Artifacts"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amira/ontologies/2018/9/untitled-ontology-9#ValidWeight -->
+
+    <owl:Class rdf:about="&untitled-ontology-9;ValidWeight">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-9;Weight"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amira/ontologies/2018/9/untitled-ontology-9#Weight -->
+
+    <owl:Class rdf:about="&untitled-ontology-9;Weight">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-9;Evidence"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amira/ontologies/2018/9/untitled-ontology-9#artifact-competence -->
+
+    <owl:Class rdf:about="&untitled-ontology-9;artifact-competence">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-9;Artifacts"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amira/ontologies/2018/9/untitled-ontology-9#evidence-competence -->
+
+    <owl:Class rdf:about="&untitled-ontology-9;evidence-competence">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-9;Evidence"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amira/ontologies/2018/9/untitled-ontology-9#relatedCompetence -->
+
+    <owl:Class rdf:about="&untitled-ontology-9;relatedCompetence">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-9;AssessmentActivityRubric"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amira/ontologies/2018/9/untitled-ontology-9#user -->
+
+    <owl:Class rdf:about="&untitled-ontology-9;user"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/amira/ontologies/2018/9/untitled-ontology-9#Active_listening -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-9;Active_listening">
+        <rdf:type rdf:resource="&untitled-ontology-9;SoftSkills"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amira/ontologies/2018/9/untitled-ontology-9#Ahmed -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-9;Ahmed">
+        <rdf:type rdf:resource="&untitled-ontology-9;user"/>
+        <have-assessmentactivity-score rdf:datatype="&xsd;integer">2</have-assessmentactivity-score>
+        <has-phone-number rdf:datatype="&xsd;integer">20885147</has-phone-number>
+        <has-age rdf:datatype="&xsd;integer">23</has-age>
+        <have-artifact-score rdf:datatype="&xsd;integer">3</have-artifact-score>
+        <have-evidence-score rdf:datatype="&xsd;integer">3</have-evidence-score>
+        <hasname rdf:datatype="&xsd;string">ahmed</hasname>
+        <has-adresse rdf:datatype="&xsd;string">mahdia</has-adresse>
+        <performed-assessment-activity rdf:resource="&untitled-ontology-9;Assessment-Activity1"/>
+        <performed-assessment-activity rdf:resource="&untitled-ontology-9;Assessment-Activity2"/>
+        <performed-assessment-activity rdf:resource="&untitled-ontology-9;Assessment-Activity3"/>
+        <present-evidence-Certifications rdf:resource="&untitled-ontology-9;Cisco-Certification"/>
+        <performed-Game-activity rdf:resource="&untitled-ontology-9;Game-activity1"/>
+        <haveTechnicalCompetence rdf:resource="&untitled-ontology-9;Hardware_and_software_knowledge_aptitude"/>
+        <haveCognitiveCompetence rdf:resource="&untitled-ontology-9;Numerical_reasoning"/>
+        <haveCognitiveCompetence rdf:resource="&untitled-ontology-9;Problem_solving"/>
+        <haveTechnicalCompetence rdf:resource="&untitled-ontology-9;Programing_algorithms_and_abstraction_aptitude"/>
+        <haveSoftCompetence rdf:resource="&untitled-ontology-9;Team_work"/>
+        <present-artifact-product rdf:resource="&untitled-ontology-9;essay_in_pdf_doucument"/>
+        <performed-Game-activity rdf:resource="&untitled-ontology-9;game-activity2"/>
+        <presnet-artifact-interestes rdf:resource="&untitled-ontology-9;interstes-in-video-games"/>
+        <present-evidence-licence rdf:resource="&untitled-ontology-9;law-degree"/>
+        <present-evidence-Qualifications rdf:resource="&untitled-ontology-9;qualification-in-history"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amira/ontologies/2018/9/untitled-ontology-9#Ali -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-9;Ali">
+        <rdf:type rdf:resource="&untitled-ontology-9;user"/>
+        <have-evidence-score rdf:datatype="&xsd;integer">2</have-evidence-score>
+        <has-phone-number rdf:datatype="&xsd;string">20584712</has-phone-number>
+        <has-age rdf:datatype="&xsd;string">25</has-age>
+        <have-assessmentactivity-score rdf:datatype="&xsd;integer">3</have-assessmentactivity-score>
+        <have-artifact-score rdf:datatype="&xsd;integer">5</have-artifact-score>
+        <hasname rdf:datatype="&xsd;string">Ali saidi</hasname>
+        <has-adresse rdf:datatype="&xsd;string">sousse</has-adresse> 
+        <haveTechnicalCompetence rdf:resource="&untitled-ontology-9;Analysis_techniques_aptitude"/>
+        <performed-assessment-activity rdf:resource="&untitled-ontology-9;Assessment-Activity1"/>
+        <performed-assessment-activity rdf:resource="&untitled-ontology-9;Assessment-Activity2"/>
+        <performed-assessment-activity rdf:resource="&untitled-ontology-9;Assessment-Activity3"/>
+        <performed-Game-activity rdf:resource="&untitled-ontology-9;Game-activity1"/>
+        <haveCognitiveCompetence rdf:resource="&untitled-ontology-9;Mental_agility"/>
+        <haveTechnicalCompetence rdf:resource="&untitled-ontology-9;Modeling_techniques_aptitude"/>
+        <present-evidence-Qualifications rdf:resource="&untitled-ontology-9;Science-Qualifications"/>
+        <haveSoftCompetence rdf:resource="&untitled-ontology-9;Team_work"/>
+        <presnet-artifact-afffiliation rdf:resource="&untitled-ontology-9;a_member-a-langauge-development-club"/>
+        <present-evidence-licence rdf:resource="&untitled-ontology-9;computer_science_degree"/>
+        <present-evidence-Certifications rdf:resource="&untitled-ontology-9;computer_science_degree"/>
+        <performed-Game-activity rdf:resource="&untitled-ontology-9;game-activity3"/>
+        <performed-Game-activity rdf:resource="&untitled-ontology-9;game-activity4"/>
+        <performed-Game-activity rdf:resource="&untitled-ontology-9;game-activity5"/>
+        <presnet-artifact-interestes rdf:resource="&untitled-ontology-9;interstes-in-software-ingenering"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amira/ontologies/2018/9/untitled-ontology-9#Analysis_techniques_aptitude -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-9;Analysis_techniques_aptitude">
+        <rdf:type rdf:resource="&untitled-ontology-9;TechnicalSkills"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amira/ontologies/2018/9/untitled-ontology-9#Assessment-Activity1 -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-9;Assessment-Activity1">
+        <rdf:type rdf:resource="&untitled-ontology-9;AssessmentActivity"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amira/ontologies/2018/9/untitled-ontology-9#Assessment-Activity2 -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-9;Assessment-Activity2">
+        <rdf:type rdf:resource="&untitled-ontology-9;AssessmentActivity"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amira/ontologies/2018/9/untitled-ontology-9#Assessment-Activity3 -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-9;Assessment-Activity3">
+        <rdf:type rdf:resource="&untitled-ontology-9;AssessmentActivity"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amira/ontologies/2018/9/untitled-ontology-9#Cisco-Certification -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-9;Cisco-Certification">
+        <rdf:type rdf:resource="&untitled-ontology-9;Certifications"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amira/ontologies/2018/9/untitled-ontology-9#Coding_aptitude -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-9;Coding_aptitude">
+        <rdf:type rdf:resource="&untitled-ontology-9;TechnicalSkills"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amira/ontologies/2018/9/untitled-ontology-9#Communication_and_Negotiation -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-9;Communication_and_Negotiation">
+        <rdf:type rdf:resource="&untitled-ontology-9;SoftSkills"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amira/ontologies/2018/9/untitled-ontology-9#Creativity -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-9;Creativity">
+        <rdf:type rdf:resource="&untitled-ontology-9;SoftSkills"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amira/ontologies/2018/9/untitled-ontology-9#Documentation_concepts_aptitude -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-9;Documentation_concepts_aptitude">
+        <rdf:type rdf:resource="&untitled-ontology-9;TechnicalSkills"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amira/ontologies/2018/9/untitled-ontology-9#Game-activity1 -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-9;Game-activity1">
+        <rdf:type rdf:resource="&untitled-ontology-9;GameActivity"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amira/ontologies/2018/9/untitled-ontology-9#Gehad -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-9;Gehad">
+        <rdf:type rdf:resource="&untitled-ontology-9;user"/>
+        <have-artifact-score rdf:datatype="&xsd;integer">2</have-artifact-score>
+        <have-evidence-score rdf:datatype="&xsd;integer">4</have-evidence-score>
+        <have-assessmentactivity-score rdf:datatype="&xsd;integer">5</have-assessmentactivity-score>
+        <hasname rdf:datatype="&xsd;string">gehad</hasname>
+        <performed-assessment-activity rdf:resource="&untitled-ontology-9;Assessment-Activity1"/>
+        <performed-assessment-activity rdf:resource="&untitled-ontology-9;Assessment-Activity2"/>
+        <performed-assessment-activity rdf:resource="&untitled-ontology-9;Assessment-Activity3"/>
+        <haveTechnicalCompetence rdf:resource="&untitled-ontology-9;Documentation_concepts_aptitude"/>
+        <haveSoftCompetence rdf:resource="&untitled-ontology-9;Planning_and_organizing"/>
+        <haveCognitiveCompetence rdf:resource="&untitled-ontology-9;Spatial_aptitude"/>
+        <present-evidence-Certifications rdf:resource="&untitled-ontology-9;computer_science_degree"/>
+        <present-evidence-licence rdf:resource="&untitled-ontology-9;computer_science_degree"/>
+        <present-evidence-Qualifications rdf:resource="&untitled-ontology-9;qualification-in-history"/>
+        <present-artifact-ressource rdf:resource="&untitled-ontology-9;web-site"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amira/ontologies/2018/9/untitled-ontology-9#Hamdi -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-9;Hamdi">
+        <rdf:type rdf:resource="&untitled-ontology-9;user"/>
+        <have-assessmentactivity-score rdf:datatype="&xsd;integer">2</have-assessmentactivity-score>
+        <has-age rdf:datatype="&xsd;integer">22</has-age>
+        <have-artifact-score rdf:datatype="&xsd;integer">3</have-artifact-score>
+        <have-evidence-score rdf:datatype="&xsd;integer">4</have-evidence-score>
+        <has-phone-number rdf:datatype="&xsd;integer">54686316</has-phone-number>
+        <hasname rdf:datatype="&xsd;string">hamdi</hasname>
+        <has-adresse rdf:datatype="&xsd;string">mahdia</has-adresse>
+        <haveSoftCompetence rdf:resource="&untitled-ontology-9;Active_listening"/>
+        <haveTechnicalCompetence rdf:resource="&untitled-ontology-9;Analysis_techniques_aptitude"/>
+        <performed-assessment-activity rdf:resource="&untitled-ontology-9;Assessment-Activity1"/>
+        <performed-assessment-activity rdf:resource="&untitled-ontology-9;Assessment-Activity2"/>
+        <haveCognitiveCompetence rdf:resource="&untitled-ontology-9;Mental_agility"/>
+        <haveCognitiveCompetence rdf:resource="&untitled-ontology-9;Sustained_attention"/>
+        <presnet-artifact-afffiliation rdf:resource="&untitled-ontology-9;a_memebrship_dans_une_societe_de_formation"/>
+        <present-evidence-Certifications rdf:resource="&untitled-ontology-9;formaland-certification"/>
+        <present-evidence-licence rdf:resource="&untitled-ontology-9;histrique-degree"/>
+        <presnet-artifact-interestes rdf:resource="&untitled-ontology-9;interstes-in-video-games"/>
+        <present-evidence-Qualifications rdf:resource="&untitled-ontology-9;math-qualification"/>
+        <present-artifact-transcript rdf:resource="&untitled-ontology-9;record-transcript"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amira/ontologies/2018/9/untitled-ontology-9#Hardware_and_software_knowledge_aptitude -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-9;Hardware_and_software_knowledge_aptitude">
+        <rdf:type rdf:resource="&untitled-ontology-9;TechnicalSkills"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amira/ontologies/2018/9/untitled-ontology-9#Master-web-service -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-9;Master-web-service">
+        <rdf:type rdf:resource="&untitled-ontology-9;Goal"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amira/ontologies/2018/9/untitled-ontology-9#Mental_agility -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-9;Mental_agility">
+        <rdf:type rdf:resource="&untitled-ontology-9;CognitiveSkills"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amira/ontologies/2018/9/untitled-ontology-9#Modeling_techniques_aptitude -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-9;Modeling_techniques_aptitude">
+        <rdf:type rdf:resource="&untitled-ontology-9;TechnicalSkills"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amira/ontologies/2018/9/untitled-ontology-9#Mooc-Certification -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-9;Mooc-Certification">
+        <rdf:type rdf:resource="&untitled-ontology-9;Certifications"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amira/ontologies/2018/9/untitled-ontology-9#Numerical_reasoning -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-9;Numerical_reasoning">
+        <rdf:type rdf:resource="&untitled-ontology-9;CognitiveSkills"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amira/ontologies/2018/9/untitled-ontology-9#Planning_and_organizing -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-9;Planning_and_organizing">
+        <rdf:type rdf:resource="&untitled-ontology-9;SoftSkills"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amira/ontologies/2018/9/untitled-ontology-9#Problem_solving -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-9;Problem_solving">
+        <rdf:type rdf:resource="&untitled-ontology-9;CognitiveSkills"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amira/ontologies/2018/9/untitled-ontology-9#Processing_speed -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-9;Processing_speed">
+        <rdf:type rdf:resource="&untitled-ontology-9;CognitiveSkills"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amira/ontologies/2018/9/untitled-ontology-9#Programing_algorithms_and_abstraction_aptitude -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-9;Programing_algorithms_and_abstraction_aptitude">
+        <rdf:type rdf:resource="&untitled-ontology-9;CognitiveSkills"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amira/ontologies/2018/9/untitled-ontology-9#Samia -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-9;Samia">
+        <rdf:type rdf:resource="&untitled-ontology-9;user"/>
+        <have-evidence-score rdf:datatype="&xsd;integer">2</have-evidence-score>
+        <has-phone-number rdf:datatype="&xsd;integer">22879625
+</has-phone-number>
+        <has-age rdf:datatype="&xsd;integer">24</has-age>
+        <have-assessmentactivity-score rdf:datatype="&xsd;integer">3</have-assessmentactivity-score>
+        <have-artifact-score rdf:datatype="&xsd;integer">4</have-artifact-score>
+        <has-adresse rdf:datatype="&xsd;string">hammamet</has-adresse>
+        <hasname rdf:datatype="&xsd;string">samia</hasname>
+        <performed-assessment-activity rdf:resource="&untitled-ontology-9;Assessment-Activity1"/>
+        <performed-assessment-activity rdf:resource="&untitled-ontology-9;Assessment-Activity2"/>
+        <present-evidence-Certifications rdf:resource="&untitled-ontology-9;Cisco-Certification"/>
+        <haveSoftCompetence rdf:resource="&untitled-ontology-9;Communication_and_Negotiation"/>
+        <haveSoftCompetence rdf:resource="&untitled-ontology-9;Creativity"/>
+        <haveTechnicalCompetence rdf:resource="&untitled-ontology-9;Hardware_and_software_knowledge_aptitude"/>
+        <haveCognitiveCompetence rdf:resource="&untitled-ontology-9;Numerical_reasoning"/>
+        <haveCognitiveCompetence rdf:resource="&untitled-ontology-9;Processing_speed"/>
+        <haveSoftCompetence rdf:resource="&untitled-ontology-9;Team_work"/>
+        <present-evidence-licence rdf:resource="&untitled-ontology-9;computer_science_degree"/>
+        <present-artifact-activity rdf:resource="&untitled-ontology-9;development-activity"/>
+        <present-evidence-Qualifications rdf:resource="&untitled-ontology-9;expessing-Qualifications"/>
+        <present-artifact-ressource rdf:resource="&untitled-ontology-9;web-site"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amira/ontologies/2018/9/untitled-ontology-9#Science-Qualifications -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-9;Science-Qualifications">
+        <rdf:type rdf:resource="&untitled-ontology-9;Qualifications"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amira/ontologies/2018/9/untitled-ontology-9#Spatial_aptitude -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-9;Spatial_aptitude">
+        <rdf:type rdf:resource="&untitled-ontology-9;CognitiveSkills"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amira/ontologies/2018/9/untitled-ontology-9#Sustained_attention -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-9;Sustained_attention">
+        <rdf:type rdf:resource="&untitled-ontology-9;CognitiveSkills"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amira/ontologies/2018/9/untitled-ontology-9#Team_work -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-9;Team_work">
+        <rdf:type rdf:resource="&untitled-ontology-9;CognitiveSkills"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amira/ontologies/2018/9/untitled-ontology-9#Verbal_knowledge -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-9;Verbal_knowledge">
+        <rdf:type rdf:resource="&untitled-ontology-9;CognitiveSkills"/>
+        <hascongintiveskils rdf:datatype="&xsd;string">Verbal Knowledge</hascongintiveskils>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amira/ontologies/2018/9/untitled-ontology-9#a_member-a-langauge-development-club -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-9;a_member-a-langauge-development-club">
+        <rdf:type rdf:resource="&untitled-ontology-9;Affilaition"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amira/ontologies/2018/9/untitled-ontology-9#a_memebrship_dans_une_societe_de_formation -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-9;a_memebrship_dans_une_societe_de_formation">
+        <rdf:type rdf:resource="&untitled-ontology-9;Affilaition"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amira/ontologies/2018/9/untitled-ontology-9#assessment-activity4 -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-9;assessment-activity4">
+        <rdf:type rdf:resource="&untitled-ontology-9;AssessmentActivity"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amira/ontologies/2018/9/untitled-ontology-9#assessment-activity5 -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-9;assessment-activity5">
+        <rdf:type rdf:resource="&untitled-ontology-9;AssessmentActivity"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amira/ontologies/2018/9/untitled-ontology-9#baccalauréat-en-science-exprimentale -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-9;baccalauréat-en-science-exprimentale">
+        <rdf:type rdf:resource="&untitled-ontology-9;Qualifications"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amira/ontologies/2018/9/untitled-ontology-9#communication-qualification -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-9;communication-qualification">
+        <rdf:type rdf:resource="&untitled-ontology-9;Qualifications"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amira/ontologies/2018/9/untitled-ontology-9#computer_science_degree -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-9;computer_science_degree">
+        <rdf:type rdf:resource="&untitled-ontology-9;License"/>
+        <related-to rdf:resource="&untitled-ontology-9;Programing_algorithms_and_abstraction_aptitude"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amira/ontologies/2018/9/untitled-ontology-9#development-activity -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-9;development-activity">
+        <rdf:type rdf:resource="&untitled-ontology-9;Activity"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amira/ontologies/2018/9/untitled-ontology-9#essay_in_pdf_doucument -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-9;essay_in_pdf_doucument">
+        <rdf:type rdf:resource="&untitled-ontology-9;Product"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amira/ontologies/2018/9/untitled-ontology-9#expessing-Qualifications -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-9;expessing-Qualifications">
+        <rdf:type rdf:resource="&untitled-ontology-9;Qualifications"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amira/ontologies/2018/9/untitled-ontology-9#finance-degree -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-9;finance-degree">
+        <rdf:type rdf:resource="&untitled-ontology-9;License"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amira/ontologies/2018/9/untitled-ontology-9#formaland-certification -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-9;formaland-certification">
+        <rdf:type rdf:resource="&untitled-ontology-9;Certifications"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amira/ontologies/2018/9/untitled-ontology-9#game-activity2 -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-9;game-activity2">
+        <rdf:type rdf:resource="&untitled-ontology-9;GameActivity"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amira/ontologies/2018/9/untitled-ontology-9#game-activity3 -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-9;game-activity3">
+        <rdf:type rdf:resource="&untitled-ontology-9;GameActivity"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amira/ontologies/2018/9/untitled-ontology-9#game-activity4 -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-9;game-activity4">
+        <rdf:type rdf:resource="&untitled-ontology-9;GameActivity"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amira/ontologies/2018/9/untitled-ontology-9#game-activity5 -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-9;game-activity5">
+        <rdf:type rdf:resource="&untitled-ontology-9;GameActivity"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amira/ontologies/2018/9/untitled-ontology-9#game-activity6 -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-9;game-activity6">
+        <rdf:type rdf:resource="&untitled-ontology-9;GameActivity"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amira/ontologies/2018/9/untitled-ontology-9#histrique-degree -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-9;histrique-degree">
+        <rdf:type rdf:resource="&untitled-ontology-9;License"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amira/ontologies/2018/9/untitled-ontology-9#interstes-in-software-ingenering -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-9;interstes-in-software-ingenering">
+        <rdf:type rdf:resource="&untitled-ontology-9;Interests"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amira/ontologies/2018/9/untitled-ontology-9#interstes-in-video-games -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-9;interstes-in-video-games">
+        <rdf:type rdf:resource="&untitled-ontology-9;Interests"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amira/ontologies/2018/9/untitled-ontology-9#law-degree -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-9;law-degree">
+        <rdf:type rdf:resource="&untitled-ontology-9;License"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amira/ontologies/2018/9/untitled-ontology-9#malika -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-9;malika">
+        <rdf:type rdf:resource="&untitled-ontology-9;user"/>
+        <have-artifact-score rdf:datatype="&xsd;integer">2</have-artifact-score>
+        <has-age rdf:datatype="&xsd;integer">23</has-age>
+        <has-phone-number rdf:datatype="&xsd;integer">27551358</has-phone-number>
+        <have-evidence-score rdf:datatype="&xsd;integer">3</have-evidence-score>
+        <have-assessmentactivity-score rdf:datatype="&xsd;integer">3</have-assessmentactivity-score>
+        <hasname rdf:datatype="&xsd;string">Malika</hasname>
+        <has-adresse rdf:datatype="&xsd;string">tuinis</has-adresse>
+        <performed-assessment-activity rdf:resource="&untitled-ontology-9;Assessment-Activity2"/>
+        <performed-assessment-activity rdf:resource="&untitled-ontology-9;Assessment-Activity3"/>
+        <haveSoftCompetence rdf:resource="&untitled-ontology-9;Communication_and_Negotiation"/>
+        <haveTechnicalCompetence rdf:resource="&untitled-ontology-9;Modeling_techniques_aptitude"/>
+        <present-evidence-Certifications rdf:resource="&untitled-ontology-9;Mooc-Certification"/>
+        <haveSoftCompetence rdf:resource="&untitled-ontology-9;Planning_and_organizing"/>
+        <haveCognitiveCompetence rdf:resource="&untitled-ontology-9;Processing_speed"/>
+        <haveCognitiveCompetence rdf:resource="&untitled-ontology-9;Verbal_knowledge"/>
+        <presnet-artifact-afffiliation rdf:resource="&untitled-ontology-9;a_member-a-langauge-development-club"/>
+        <present-evidence-licence rdf:resource="&untitled-ontology-9;computer_science_degree"/>
+        <presnet-artifact-interestes rdf:resource="&untitled-ontology-9;interstes-in-software-ingenering"/>
+        <presnet-artifact-interestes rdf:resource="&untitled-ontology-9;programing-interstes"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amira/ontologies/2018/9/untitled-ontology-9#mangment-diploma -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-9;mangment-diploma">
+        <rdf:type rdf:resource="&untitled-ontology-9;License"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amira/ontologies/2018/9/untitled-ontology-9#master-scince-Computer -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-9;master-scince-Computer">
+        <rdf:type rdf:resource="&untitled-ontology-9;Goal"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amira/ontologies/2018/9/untitled-ontology-9#master-web-security -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-9;master-web-security">
+        <rdf:type rdf:resource="&untitled-ontology-9;Goal"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amira/ontologies/2018/9/untitled-ontology-9#math-qualification -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-9;math-qualification">
+        <rdf:type rdf:resource="&untitled-ontology-9;Qualifications"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amira/ontologies/2018/9/untitled-ontology-9#presnetaion_power_point -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-9;presnetaion_power_point">
+        <rdf:type rdf:resource="&untitled-ontology-9;Product"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amira/ontologies/2018/9/untitled-ontology-9#programing-interstes -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-9;programing-interstes">
+        <rdf:type rdf:resource="&untitled-ontology-9;Interests"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amira/ontologies/2018/9/untitled-ontology-9#qualification-in-activity -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-9;qualification-in-activity">
+        <rdf:type rdf:resource="&untitled-ontology-9;Qualifications"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amira/ontologies/2018/9/untitled-ontology-9#qualification-in-history -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-9;qualification-in-history">
+        <rdf:type rdf:resource="&untitled-ontology-9;Qualifications"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amira/ontologies/2018/9/untitled-ontology-9#record-transcript -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-9;record-transcript">
+        <rdf:type rdf:resource="&untitled-ontology-9;Transcript"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amira/ontologies/2018/9/untitled-ontology-9#web-site -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-9;web-site">
+        <rdf:type rdf:resource="&untitled-ontology-9;Ressource"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amira/ontologies/2018/9/untitled-ontology-9#yes-you-can-certification -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-9;yes-you-can-certification">
+        <rdf:type rdf:resource="&untitled-ontology-9;Certifications"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amira/ontologies/2018/9/untitled-ontology-9#yeser -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-9;yeser">
+        <rdf:type rdf:resource="&untitled-ontology-9;user"/>
+        <have-artifact-score rdf:datatype="&xsd;integer">1</have-artifact-score>
+        <has-age rdf:datatype="&xsd;integer">25</has-age>
+        <have-assessmentactivity-score rdf:datatype="&xsd;integer">3</have-assessmentactivity-score>
+        <have-evidence-score rdf:datatype="&xsd;integer">5</have-evidence-score>
+        <has-phone-number rdf:datatype="&xsd;integer">58774321</has-phone-number>
+        <has-adresse rdf:datatype="&xsd;string">sousse</has-adresse>
+        <hasname rdf:datatype="&xsd;string">yeser</hasname>
+        <haveSoftCompetence rdf:resource="&untitled-ontology-9;Active_listening"/>
+        <haveTechnicalCompetence rdf:resource="&untitled-ontology-9;Analysis_techniques_aptitude"/>
+        <performed-assessment-activity rdf:resource="&untitled-ontology-9;Assessment-Activity1"/>
+        <performed-assessment-activity rdf:resource="&untitled-ontology-9;Assessment-Activity2"/>
+        <performed-assessment-activity rdf:resource="&untitled-ontology-9;Assessment-Activity3"/>
+        <haveSoftCompetence rdf:resource="&untitled-ontology-9;Creativity"/>
+        <haveTechnicalCompetence rdf:resource="&untitled-ontology-9;Hardware_and_software_knowledge_aptitude"/>
+        <haveCognitiveCompetence rdf:resource="&untitled-ontology-9;Mental_agility"/>
+        <haveCognitiveCompetence rdf:resource="&untitled-ontology-9;Sustained_attention"/>
+        <presnet-artifact-afffiliation rdf:resource="&untitled-ontology-9;a_member-a-langauge-development-club"/>
+        <present-evidence-Qualifications rdf:resource="&untitled-ontology-9;expessing-Qualifications"/>
+        <present-evidence-Certifications rdf:resource="&untitled-ontology-9;formaland-certification"/>
+        <present-evidence-licence rdf:resource="&untitled-ontology-9;law-degree"/>
+        <present-artifact-product rdf:resource="&untitled-ontology-9;presnetaion_power_point"/>
+    </owl:NamedIndividual>
 </rdf:RDF>
 
 
 
-<!-- Generated by the OWL API (version 4.5.6) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
 
